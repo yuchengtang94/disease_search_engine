@@ -1,0 +1,42 @@
+<!doctype html>
+
+<body bgcolor="white">
+<title>My search page!</title>
+<style>
+dd {
+    width:100%
+}
+</style>
+<div style="width:100%">
+<h3 style="background-color:black;color:lightgrey"> Disease Search </h3>
+
+<h1>Disease search page</h1>
+
+
+<form action="/results" name="search" method="post">
+    <dl>
+        <p>Symptoms and name search:</p>
+        <dd><textarea rows="4" cols="100" name="query"></textarea>
+            <dd>Query option: <select name = "freetext_select">
+
+                <option>Conjunctive</option>
+
+                <option>Disjunctive</option>
+
+
+            </select>
+        <!--<dd>Search in starring: <input type="text" style="width:300px" name="starring">-->
+
+        <!--<dd>Runtime: min <input type="text" name="mintime"> max <input type="text" name="maxtime">-->
+        <dd>Search in Introduction: <input type="text" style="width:300px" name="introduction">
+        <!--<dd>Search in Country: <input type="text" style="width:300px" name="country">-->
+        <dd>Search in Causes: <input type="text" style="width:300px" name="causes">
+        <dd>Search in Treatment: <input type="text" style="width:300px" name="treatment">
+        <!--<dd>Search in Time: <input type="text" style="width:300px" name="time">-->
+        <!--<dd>Search in Category: <input type="text" style="width:300px" name="categories">-->
+        <dd><input type="submit" value="Search">
+
+    </dl>
+</form>
+</div>
+</body>
