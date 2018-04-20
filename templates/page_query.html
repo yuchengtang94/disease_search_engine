@@ -1,42 +1,129 @@
 <!doctype html>
 
-<body bgcolor="white">
+<body>
 <title>My search page!</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <style>
-dd {
-    width:100%
-}
+
+    body {
+        background-size: cover;
+    }
+
+    img {
+        width: 100%;
+    }
+
+
+    .form-horizontal {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .form-group {
+        /*width: 100%;*/
+        margin: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .left_body {
+        width: 49%;
+        float: left;
+    }
+
+    .right_body {
+        width: 49%;
+        float: right;
+        /*position: relative;*/
+    }
+
+    .search_button {
+        margin: 25%;
+        width: 50%;
+    }
+
+
 </style>
-<div style="width:100%">
-<h3 style="background-color:black;color:lightgrey"> Disease Search </h3>
-
-<h1>Disease search page</h1>
 
 
-<form action="/results" name="search" method="post">
-    <dl>
-        <p>Symptoms and name search:</p>
-        <dd><textarea rows="4" cols="100" name="query"></textarea>
-            <dd>Query option: <select name = "freetext_select">
+<div class="container">
+    <div class="img_container">
+        <img src="http://www.vdh.virginia.gov/content/uploads/sites/10/2017/03/addiction_AdobeStock_106032116_cropped.jpg">
+    </div>
+    <h2 style="background-color:black;color:lightgrey"> Disease Search </h2>
+    <form class="form-horizontal" action="/results" name="search" method="post">
+        <div class="left_body">
+            <div class="form-group">
+                <label for="selection" class="col-sm-2 control-label">Options</label>
+                <div class="col-sm-10">
+                  <select class="form-control" id="selection" name="freetext_select">
+                      <option>Conjunctive</option>
 
-                <option>Conjunctive</option>
+                        <option>Disjunctive</option>
+                  </select>
+                </div>
+            </div>
 
-                <option>Disjunctive</option>
+            <div class="form-group">
+                <label for="symptom_name" class="col-sm-2 control-label">Symptoms:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="symptom_name" placeholder="Symptoms or Disease Name" name="query">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="introduction" class="col-sm-2 control-label">Introduction:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="introduction" placeholder="Introduction" name="introduction">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="causes" class="col-sm-2 control-label">Causes:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="causes" placeholder="Causes" name="causes">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="treatement" class="col-sm-2 control-label">Treatment:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="treatement" placeholder="Treatment" name="treatment">
+                </div>
+            </div>
+
+                <!--<p>Symptoms and name search:</p>-->
+                <!--<dd><textarea class="form-group" rows="4" cols="100" name="query"></textarea>-->
+                    <!--<dd>Query option: <select name = "freetext_select">-->
+
+                        <!--<option>Conjunctive</option>-->
+
+                        <!--<option>Disjunctive</option>-->
 
 
-            </select>
-        <!--<dd>Search in starring: <input type="text" style="width:300px" name="starring">-->
+                    <!--</select>-->
+                <!--<dd>Search in starring: <input type="text" style="width:300px" name="starring">-->
 
-        <!--<dd>Runtime: min <input type="text" name="mintime"> max <input type="text" name="maxtime">-->
-        <dd>Search in Introduction: <input type="text" style="width:300px" name="introduction">
-        <!--<dd>Search in Country: <input type="text" style="width:300px" name="country">-->
-        <dd>Search in Causes: <input type="text" style="width:300px" name="causes">
-        <dd>Search in Treatment: <input type="text" style="width:300px" name="treatment">
-        <!--<dd>Search in Time: <input type="text" style="width:300px" name="time">-->
-        <!--<dd>Search in Category: <input type="text" style="width:300px" name="categories">-->
-        <dd><input type="submit" value="Search">
-
-    </dl>
-</form>
+                <!--<dd>Runtime: min <input type="text" name="mintime"> max <input type="text" name="maxtime">-->
+                <!--<dd>Search in Introduction: <input class="form-group" type="text" style="width:300px" name="introduction">-->
+                <!--&lt;!&ndash;<dd>Search in Country: <input type="text" style="width:300px" name="country">&ndash;&gt;-->
+                <!--<dd>Search in Causes: <input class="form-group" type="text" style="width:300px" name="causes">-->
+                <!--<dd>Search in Treatment: <input  class="form-group" type="text" style="width:300px" name="treatment">-->
+                <!--&lt;!&ndash;<dd>Search in Time: <input type="text" style="width:300px" name="time">&ndash;&gt;-->
+                <!--&lt;!&ndash;<dd>Search in Category: <input type="text" style="width:300px" name="categories">&ndash;&gt;-->
+        </div>
+        <div class="right_body">
+            <!--<input type="submit" class="btn btn-info btn-lg" value="Search">-->
+            <input class="search_button" type="image" src="data:image/png;base64,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" border = "0" alt="submit"/>
+        </div>
+    </form>
 </div>
 </body>
