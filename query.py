@@ -353,6 +353,10 @@ def documents(res):
     global gresults
     disease = gresults[res.encode('utf-8')]
     diseaseName = disease['name']
+    diseaseIntro = disease['introduction']
+    diseaseSymp = disease['symptoms']
+    diseaseCauses = disease['causes']
+    diseaseTreat = disease['treatment']
     for term in disease:
         if type(disease[term]) is AttrList:
             s = "\n"
@@ -364,7 +368,8 @@ def documents(res):
     mDisease = Disease()
 
     # disease['runtime'] = str(filmdic['runtime']) + " min"
-    return render_template('page_targetArticle.html', disease=disease, name=diseaseName)
+    return render_template('page_targetArticle.html', disease=disease, name=diseaseName, intro=diseaseIntro, symp=diseaseSymp,
+                           causes=diseaseCauses, treat=diseaseTreat)
 
 
 def text_search(str_text_query,phrase_text_query,q):

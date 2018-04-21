@@ -1,0 +1,35 @@
+[2018-04-20T10:04:43,054][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-04-20T10:04:43,138][INFO ][o.e.e.NodeEnvironment    ] [Rp_urP2] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [265.1gb], net total_space [465.6gb], types [apfs]
+[2018-04-20T10:04:43,139][INFO ][o.e.e.NodeEnvironment    ] [Rp_urP2] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-04-20T10:04:43,172][INFO ][o.e.n.Node               ] node name [Rp_urP2] derived from node ID [Rp_urP2GToa0FLkSZFR-cA]; set [node.name] to override
+[2018-04-20T10:04:43,172][INFO ][o.e.n.Node               ] version[6.2.3], pid[40197], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.13.2/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-04-20T10:04:43,172][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/qx/rj8h8d5s0rb3h194604cx6jm0000gn/T/elasticsearch.ecEOr8J3, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/yucheng/Downloads/elasticsearch-6.2-1.3, -Des.path.conf=/Users/yucheng/Downloads/elasticsearch-6.2-1.3/config]
+[2018-04-20T10:04:43,770][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [aggs-matrix-stats]
+[2018-04-20T10:04:43,770][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [analysis-common]
+[2018-04-20T10:04:43,770][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [ingest-common]
+[2018-04-20T10:04:43,770][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [lang-expression]
+[2018-04-20T10:04:43,770][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [lang-mustache]
+[2018-04-20T10:04:43,770][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [lang-painless]
+[2018-04-20T10:04:43,771][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [mapper-extras]
+[2018-04-20T10:04:43,771][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [parent-join]
+[2018-04-20T10:04:43,771][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [percolator]
+[2018-04-20T10:04:43,771][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [rank-eval]
+[2018-04-20T10:04:43,771][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [reindex]
+[2018-04-20T10:04:43,771][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [repository-url]
+[2018-04-20T10:04:43,771][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [transport-netty4]
+[2018-04-20T10:04:43,771][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [tribe]
+[2018-04-20T10:04:43,772][INFO ][o.e.p.PluginsService     ] [Rp_urP2] no plugins loaded
+[2018-04-20T10:04:45,876][INFO ][o.e.d.DiscoveryModule    ] [Rp_urP2] using discovery type [zen]
+[2018-04-20T10:04:46,315][INFO ][o.e.n.Node               ] initialized
+[2018-04-20T10:04:46,315][INFO ][o.e.n.Node               ] [Rp_urP2] starting ...
+[2018-04-20T10:04:46,475][INFO ][o.e.t.TransportService   ] [Rp_urP2] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-04-20T10:04:49,550][INFO ][o.e.c.s.MasterService    ] [Rp_urP2] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {Rp_urP2}{Rp_urP2GToa0FLkSZFR-cA}{o2Y1hh7_Rgar8IlNwXZ3ww}{127.0.0.1}{127.0.0.1:9300}
+[2018-04-20T10:04:49,555][INFO ][o.e.c.s.ClusterApplierService] [Rp_urP2] new_master {Rp_urP2}{Rp_urP2GToa0FLkSZFR-cA}{o2Y1hh7_Rgar8IlNwXZ3ww}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {Rp_urP2}{Rp_urP2GToa0FLkSZFR-cA}{o2Y1hh7_Rgar8IlNwXZ3ww}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-04-20T10:04:49,571][INFO ][o.e.h.n.Netty4HttpServerTransport] [Rp_urP2] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-04-20T10:04:49,571][INFO ][o.e.n.Node               ] [Rp_urP2] started
+[2018-04-20T10:04:49,726][INFO ][o.e.g.GatewayService     ] [Rp_urP2] recovered [2] indices into cluster_state
+[2018-04-20T10:04:50,019][INFO ][o.e.c.r.a.AllocationService] [Rp_urP2] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[sample_film_index][3]] ...]).
+[2018-04-20T18:50:33,712][INFO ][o.e.n.Node               ] [Rp_urP2] stopping ...
+[2018-04-20T18:50:33,755][INFO ][o.e.n.Node               ] [Rp_urP2] stopped
+[2018-04-20T18:50:33,755][INFO ][o.e.n.Node               ] [Rp_urP2] closing ...
+[2018-04-20T18:50:33,764][INFO ][o.e.n.Node               ] [Rp_urP2] closed
