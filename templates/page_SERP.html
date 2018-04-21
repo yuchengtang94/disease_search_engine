@@ -53,29 +53,29 @@ p.cannotfind {
     <h2 style="background-color:black;color:lightgrey"> Disease Search </h2>
     <!--<h3 class="header"> Disease Search </h3>-->
     <form action="/results" name="search" method="post">
-    <dl>
-        <dd><textarea rows="3" cols="150"  name="query">{{queries['symptoms']}}</textarea>
-            <dd>Disease query option: <select name = "freetext_select">
+        <dd><textarea placeholder="Describe your symptoms here..." rows="5" cols="150"  name="query">{{queries['symptoms']}}</textarea>
+        <h3><b>Disease query option: </b><select name = "freetext_select">
 
                 <option>Conjunctive</option>
 
                 <option>Disjunctive</option>
 
-            </select>
+            </select></h3>
 
         <!--<dd>Search in starring: <input type="text" style="width:300px" name="starring" value="{{queries['star']}}">-->
 
         <!--<dd>Runtime: min <input type="text" name="mintime" value={{queries['mintime']}}> max <input type="text" name="maxtime" value={{queries['maxtime']}}>-->
         <!--cyc add-->
-        <dd>Search in Introduction: <input type="text" style="width:300px" name="introduction" value="{{queries['introduction']}}">
+        <h3><b>Search in Introduction: </b><input type="text" style="width:300px" name="introduction" value="{{queries['introduction']}}"></h3>
         <!--<dd>Search in Country: <input type="text" style="width:300px" name="country" value="{{queries['country']}}">-->
-        <dd>Search in Causes: <input type="text" style="width:300px" name="causes" value="{{queries['causes']}}">
-        <dd>Search in Treatment: <input type="text" style="width:300px" name="treatment" value="{{queries['treatment']}}">
+        <h3><b>Search in Causes: </b><input type="text" style="width:300px" name="causes" value="{{queries['causes']}}"></h3>
+        <h3><b>Search in Treatment: </b><input type="text" style="width:300px" name="treatment" value="{{queries['treatment']}}"></h3>
         <!--<dd>Search in Time: <input type="text" style="width:300px" name="time" value="{{queries['time']}}">-->
         <!--<dd>Search in Categories: <input type="text" style="width:300px" name="categories" value="{{queries['categories']}}">-->
-        <dd><input type="submit" value="Search">
-        <label>   {{message}}</label>
-    </dl>
+        <!--<dd><input type="submit" value="Search">-->
+        <p><input class="search_btn" type="image" src="https://www.shareicon.net/data/64x64/2016/08/23/819189_multimedia_512x512.png"></p>
+        <p><label>   {{message}}</label></p>
+
     </form>
     <p style="font-size:14px">Found {{res_num}} results. Showing {{ 1+(page_num-1)*10 }} - {% if (10+(page_num-1)*10) > res_num %}{{res_num}}{% else %}{{ 10+(page_num-1)*10 }}{% endif %}</p>
     {% if page_num > 1 %}
