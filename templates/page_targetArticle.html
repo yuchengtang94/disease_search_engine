@@ -6,15 +6,21 @@
 }
 
 .left_body {
-    width: 49%;
+    width: 70%;
     float: left;
+
 }
 
 .right_body {
-    width: 49%;
+    width: 20%;
     float: right;
     /*position: relative;*/
 }
+.rdr-sidebar-index{
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 30px;
+}
+
 </style>
 <body bgcolor="white">
 <h3>{{name|safe}}</h3>
@@ -26,24 +32,29 @@
             {% endfor %}
         </div>-->
         <div class="rdr-box" id="name">
+            <strong>Name</strong>
             <a name="name"></a>
-            <p>{{name}}</p>
+            <pre style="white-space: pre-wrap;">{{name | safe}}</pre>
         </div>
         <div class="rdr-box" id="introduction">
+             <strong>Introduction</strong>
             <a name="introduction"></a>
-            <p>{{intro}}</p>
+            <pre style="white-space: pre-wrap;">{{intro | safe}}</pre>
         </div>
          <div class="rdr-box" id="symptoms">
+             <strong>Symptoms</strong>
             <a name="symptoms"></a>
-            <p>{{symp}}</p>
+            <pre style="white-space: pre-wrap;">{{symp | safe}}</pre>
         </div>
          <div class="rdr-box" id="treatment">
+             <strong>Treatment</strong>
             <a name="treatment"></a>
-            <p>{{treat}}</p>
+            <pre style="white-space: pre-wrap;">{{treat | safe}}</pre>
         </div>
          <div class="rdr-box" id="causes">
+             <strong>Causes</strong>
             <a name="causes"></a>
-            <p>{{causes}}</p>
+            <pre style="white-space: pre-wrap;">{{causes | safe}}</pre>
         </div>
 
     </div>
