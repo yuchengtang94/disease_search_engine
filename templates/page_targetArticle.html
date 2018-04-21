@@ -1,12 +1,63 @@
 <!doctype html>
+<style>
+.sansserif {
+    font-family: "Times New Roman", Times, sans-serif;
+    font-weight: bold;
+}
 
+.left_body {
+    width: 49%;
+    float: left;
+}
+
+.right_body {
+    width: 49%;
+    float: right;
+    /*position: relative;*/
+}
+</style>
 <body bgcolor="white">
-
 <h3>{{name|safe}}</h3>
-<div class="disease" style="word-wrap:break-word; padding:10px;">
-    {% for term in disease %}
-        <pre style="white-space: pre-wrap;"><strong>{{term}}</strong>: {{disease[term] | safe}}</pre>
-    {% endfor %}
-</div>
+<div class="container" >
+    <div class="left_body">
+       <!--<div class="disease" style="word-wrap:break-word; padding:10px;">
+            {% for term in disease %}
+                <pre style="white-space: pre-wrap;"><strong>{{term}}</strong>: {{disease[term] | safe}}</pre>
+            {% endfor %}
+        </div>-->
+        <div class="rdr-box" id="name">
+            <a name="name"></a>
+            <p>{{name}}</p>
+        </div>
+        <div class="rdr-box" id="introduction">
+            <a name="introduction"></a>
+            <p>{{intro}}</p>
+        </div>
+         <div class="rdr-box" id="symptoms">
+            <a name="symptoms"></a>
+            <p>{{symp}}</p>
+        </div>
+         <div class="rdr-box" id="treatment">
+            <a name="treatment"></a>
+            <p>{{treat}}</p>
+        </div>
+         <div class="rdr-box" id="causes">
+            <a name="causes"></a>
+            <p>{{causes}}</p>
+        </div>
 
+    </div>
+
+    <div class="right_body">
+        <div class="sidebar">
+             <div class="rdr-sidebar-index">
+                <p><a href="#name">Name</a></p>
+                <p><a href="#introduction">Introduction</a></p>
+                <p><a href="#symptoms">Symptoms</a></p>
+                <p><a href="#treatment">Treatment</a></p>
+                <p><a href="#causes">Causes</a></p>
+            </div>
+         </div>
+    </div>
+</div>
 </body>
