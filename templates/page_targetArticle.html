@@ -8,14 +8,19 @@
 .left_body {
     width: 70%;
     float: left;
+}
 
+.rdr-box{
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .right_body {
     width: 20%;
-    float: right;
+    right: 0;
+    position: fixed;
     /*position: relative;*/
 }
+
 .rdr-sidebar-index{
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 30px;
@@ -34,28 +39,29 @@
         <div class="rdr-box" id="name">
             <strong>Name</strong>
             <a name="name"></a>
-            <pre style="white-space: pre-wrap;">{{name | safe}}</pre>
+            <pre style="white-space: pre-wrap; font-size: 15px; ">{{name | safe}}</pre>
         </div>
         <div class="rdr-box" id="introduction">
              <strong>Introduction</strong>
             <a name="introduction"></a>
-            <pre style="white-space: pre-wrap;">{{intro | safe}}</pre>
+            <pre style="white-space: pre-wrap; font-size: 15px; ">{{intro | safe}}</pre>
         </div>
          <div class="rdr-box" id="symptoms">
              <strong>Symptoms</strong>
             <a name="symptoms"></a>
-            <pre style="white-space: pre-wrap;">{{symp | safe}}</pre>
-        </div>
-         <div class="rdr-box" id="treatment">
-             <strong>Treatment</strong>
-            <a name="treatment"></a>
-            <pre style="white-space: pre-wrap;">{{treat | safe}}</pre>
+            <pre style="white-space: pre-wrap; font-size: 15px; ">{{symp | safe}}</pre>
         </div>
          <div class="rdr-box" id="causes">
              <strong>Causes</strong>
             <a name="causes"></a>
-            <pre style="white-space: pre-wrap;">{{causes | safe}}</pre>
+            <pre style="white-space: pre-wrap; font-size: 15px; ">{{causes | safe}}</pre>
         </div>
+         <div class="rdr-box" id="treatment">
+             <strong>Treatment</strong>
+            <a name="treatment"></a>
+            <pre style="white-space: pre-wrap; font-size: 15px; ">{{treat | safe}}</pre>
+        </div>
+
 
     </div>
 
@@ -65,8 +71,8 @@
                 <p><a href="#name">Name</a></p>
                 <p><a href="#introduction">Introduction</a></p>
                 <p><a href="#symptoms">Symptoms</a></p>
+                 <p><a href="#causes">Causes</a></p>
                 <p><a href="#treatment">Treatment</a></p>
-                <p><a href="#causes">Causes</a></p>
             </div>
          </div>
     </div>
