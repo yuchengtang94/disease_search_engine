@@ -25,6 +25,10 @@
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 30px;
 }
+.similar_dis_name {
+    font-family: Helvetica, Arial, sans-serif;
+    text-text-decoration:underline;
+}
 
 </style>
 <body bgcolor="white">
@@ -61,7 +65,23 @@
             <a name="treatment"></a>
             <pre style="white-space: pre-wrap; font-size: 15px; ">{{treat | safe}}</pre>
         </div>
+        <div class="rdr-box" id = "similarDiseases">
+            <strong>Similar Diseases</strong>
 
+            {% if similar_dis_num %}
+                {% for res in similarDiseaseDict %}
+
+                    <p class="rdr-box"><a href="/similar_documents/{{res}}" target="_blank">  {{ similarDiseaseDict[res]['name']|safe }} </a> </p>
+
+
+                {% endfor %}
+            {% else %}
+                {% for res in similarDiseaseDict %}
+                    <p class="cannotfind">{{res}}</p>
+                {% endfor %}
+            {% endif %}
+
+        </div>
 
     </div>
 

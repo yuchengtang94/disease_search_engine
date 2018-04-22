@@ -56,7 +56,6 @@ class Disease(DocType):
 
         super(Disease, self).__init__(**kwargs)
 
-
         # --- disease here ---
         id = Text(analyzer=my_analyzer)
         name = Text(analyzer=my_analyzer)
@@ -64,9 +63,6 @@ class Disease(DocType):
         symptoms = Text(analyzer=my_analyzer)
         causes = Text(analyzer=my_analyzer)
         treatment = Text(analyzer=my_analyzer)
-
-
-
 
     class Meta:
         index = 'test_rare_disease_index'
@@ -84,7 +80,7 @@ def buildIndex():
     Disease_index.create()
     
     # Open the json film corpus
-    with open('test_rare_disease.json') as data_file:
+    with open('final_rare_disease.json') as data_file:
         diseases = json.load(data_file)
         size = len(diseases)
     
@@ -108,7 +104,6 @@ def buildIndex():
     ]
     
     helpers.bulk(es, actions) 
-
 
 def convert_time(s):
     res = 0
@@ -173,7 +168,6 @@ def convert_time(s):
 
         print "convert runtime failed: " + "\"" + str(s) + "\""
     return res
-
 
 def main():
     start_time = time.time()
