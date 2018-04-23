@@ -2,14 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1602d847-d745-4903-8107-ca9e6a5e4a47" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ES_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ES_example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/logs/elasticsearch.log" beforeDir="false" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/logs/elasticsearch.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/logs/gc.log.0.current" beforeDir="false" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/logs/gc.log.0.current" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/films_corpus.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page_targetArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_targetArticle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ES_example.iml" afterPath="$PROJECT_DIR$/.idea/ES_example.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/_state/global-29.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/_state/node-7.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/0/_state/state-1.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/0/index/segments_3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/0/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/0/translog/translog-2.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/0/translog/translog-2.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/0/translog/translog-3.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/0/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/_state/state-1.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/index/segments_5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/translog/translog-3.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/translog/translog-3.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/translog/translog-4.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/1/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/_state/state-1.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/index/segments_5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/translog/translog-3.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/translog/translog-3.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/translog/translog-4.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/2/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/_state/state-1.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/index/segments_5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/translog/translog-3.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/translog/translog-3.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/translog/translog-4.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/3/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/_state/state-1.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/index/segments_5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/translog/translog-3.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/translog/translog-3.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/translog/translog-4.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/4/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/KEwyQXIkR0mSlIMZAasWBg/_state/state-9.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/_state/state-2.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/index/_1.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/index/_1.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/index/_1.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/index/segments_7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/translog/translog-5.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/translog/translog-5.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/translog/translog-6.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/0/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/_state/state-2.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/index/_1.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/index/_1.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/index/_1.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/index/segments_7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/translog/translog-5.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/translog/translog-5.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/translog/translog-6.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/1/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/_state/state-2.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/index/_1.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/index/_1.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/index/_1.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/index/segments_7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/translog/translog-5.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/translog/translog-5.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/translog/translog-6.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/2/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/_state/state-2.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/index/_1.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/index/_1.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/index/_1.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/index/segments_7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/translog/translog-5.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/translog/translog-5.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/translog/translog-6.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/3/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/_state/state-2.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/index/_0.cfe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/index/_0.cfs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/index/_0.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/index/segments_7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/index/write.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/translog/translog-5.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/translog/translog-5.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/translog/translog-6.tlog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/4/translog/translog.ckp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/n8KiGoRBTDy-MjuLKBF7RQ/_state/state-13.st" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/logs/elasticsearch.log" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/logs/elasticsearch.log" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/logs/gc.log.0.current" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/logs/gc.log.0.current" />
+      <change beforePath="$PROJECT_DIR$/templates/page_SERP.html" afterPath="$PROJECT_DIR$/templates/page_SERP.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,10 +130,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/disease_search_engine$index.coverage" NAME="index Coverage Results" MODIFIED="1524370735955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ES$index.coverage" NAME="index Coverage Results" MODIFIED="1524169163421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ES$query.coverage" NAME="query Coverage Results" MODIFIED="1524262928841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disease_search_engine$query.coverage" NAME="query Coverage Results" MODIFIED="1524380208742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/disease_search_engine$index.coverage" NAME="index Coverage Results" MODIFIED="1524370735955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ES$query.coverage" NAME="query Coverage Results" MODIFIED="1524526398190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ES$index.coverage" NAME="index Coverage Results" MODIFIED="1524522227326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -32,50 +143,34 @@
       <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+            <state relative-caret-position="439">
+              <caret line="84" column="9" lean-forward="false" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#3908#5524#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="query.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="query.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/query.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1439">
-              <caret line="253" column="28" lean-forward="true" selection-start-line="253" selection-start-column="28" selection-end-line="253" selection-end-column="28" />
+            <state relative-caret-position="423">
+              <caret line="82" column="19" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="19" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
-                <element signature="e#12674#14011#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_SERP.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="page_SERP.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="79" column="45" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="45" />
+            <state relative-caret-position="330">
+              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
               <folding>
-                <element signature="n#style#0;n#input#0;n#form#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1524333341888" expanded="true" signature="4541:4547" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_targetArticle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/page_targetArticle.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="67" column="45" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="45" />
-              <folding>
-                <marker date="1524380208728" expanded="true" signature="3125:3132" ph="..." />
+                <element signature="n#src#0;n#input#0;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +179,8 @@
       <file leaf-file-name="page_query.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/page_query.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="-269">
+              <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -120,11 +215,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/templates/page_SERP.html" />
         <option value="$PROJECT_DIR$/templates/page_query.html" />
         <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/templates/page_targetArticle.html" />
         <option value="$PROJECT_DIR$/query.py" />
+        <option value="$PROJECT_DIR$/templates/page_SERP.html" />
       </list>
     </option>
   </component>
@@ -137,27 +232,38 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="809" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="disease_search_engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disease_search_engine" type="462c0819:PsiDirectoryNode" />
+              <item name="ES" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ES" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="disease_search_engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disease_search_engine" type="462c0819:PsiDirectoryNode" />
+              <item name="ES" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ES" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -186,7 +292,6 @@
   </component>
   <component name="RunManager" selected="Python.query">
     <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ES_example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -197,7 +302,8 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="ES_example" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -205,7 +311,6 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="query" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ES_example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -216,7 +321,8 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="ES_example" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/query.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -224,7 +330,6 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ES_example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -235,7 +340,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="ES_example" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -389,18 +495,21 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list>
-      <item itemvalue="Python.index" />
-      <item itemvalue="Python.query" />
-      <item itemvalue="Python.test" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.index" />
+      <item index="1" class="java.lang.String" itemvalue="Python.query" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="Python.query" />
-        <item itemvalue="Python.index" />
-        <item itemvalue="Python.test" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.query" />
+        <item index="1" class="java.lang.String" itemvalue="Python.index" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -416,30 +525,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="809" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286517" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3286517" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286517" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2074392" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,13 +559,24 @@
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4693">
+          <caret line="253" column="28" lean-forward="true" selection-start-line="253" selection-start-column="28" selection-end-line="253" selection-end-column="28" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/templates/page_query.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -469,7 +587,7 @@
     <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
-          <caret line="94" column="101" selection-start-line="94" selection-start-column="101" selection-end-line="94" selection-end-column="101" />
+          <caret line="94" column="101" lean-forward="false" selection-start-line="94" selection-start-column="101" selection-end-line="94" selection-end-column="101" />
         </state>
       </provider>
     </entry>
@@ -479,7 +597,6 @@
           <caret line="40" column="69" lean-forward="true" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#3908#5524#0" />
           </folding>
         </state>
       </provider>
@@ -487,28 +604,21 @@
     <entry file="file://$PROJECT_DIR$/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="e#1#10#0" expanded="true" />
-            <element signature="e#12674#14011#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/elasticsearch_dsl/field.py" />
-    <entry file="file://$PROJECT_DIR$/films_corpus.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514440">
-          <caret line="34296" column="2562" selection-start-line="34296" selection-start-column="2562" selection-end-line="34296" selection-end-column="2562" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/films_corpus.json" />
     <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/elasticsearch_dsl/search.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/templates/page_query.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -519,16 +629,16 @@
     <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
-          <caret line="94" column="101" selection-start-line="94" selection-start-column="101" selection-end-line="94" selection-end-column="101" />
+          <caret line="94" column="101" lean-forward="false" selection-start-line="94" selection-start-column="101" selection-end-line="94" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#3908#5524#0" />
           </folding>
         </state>
       </provider>
@@ -536,10 +646,9 @@
     <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#3908#5524#0" />
           </folding>
         </state>
       </provider>
@@ -547,10 +656,9 @@
     <entry file="file://$PROJECT_DIR$/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
-          <caret line="132" column="22" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
+          <caret line="132" column="22" lean-forward="false" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
           <folding>
             <element signature="e#1#10#0" expanded="true" />
-            <element signature="e#12674#14011#0" />
           </folding>
         </state>
       </provider>
@@ -574,7 +682,7 @@
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105">
-          <caret line="210" column="16" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="16" />
+          <caret line="210" column="16" lean-forward="false" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -599,63 +707,58 @@
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4408">
-          <caret line="236" selection-start-line="236" selection-end-line="236" />
+          <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2089">
-          <caret line="340" selection-start-line="340" selection-end-line="340" />
+          <caret line="340" column="0" lean-forward="false" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/films_corpus.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="34300" column="23" selection-start-line="34300" selection-start-column="23" selection-end-line="34300" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/elasticsearch/connection/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/elasticsearch_dsl/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="678" selection-start-line="678" selection-end-line="678" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/films_corpus.json" />
+    <entry file="file:///Library/Python/2.7/site-packages/elasticsearch/connection/base.py" />
+    <entry file="file:///Library/Python/2.7/site-packages/elasticsearch_dsl/search.py" />
     <entry file="file://$PROJECT_DIR$/test_rare_disease.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="36" />
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rare_disease.json">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
+    <entry file="file://$PROJECT_DIR$/templates/page_targetArticle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="67" column="45" lean-forward="false" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="45" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        <state relative-caret-position="439">
+          <caret line="84" column="9" lean-forward="false" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#3908#5524#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="82" column="19" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="19" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page_query.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="-269">
+          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#input#0;n#div#1;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -665,33 +768,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="79" column="45" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="45" />
+        <state relative-caret-position="330">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#form#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1524333341888" expanded="true" signature="4541:4547" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page_targetArticle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="67" column="45" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="45" />
-          <folding>
-            <marker date="1524380208728" expanded="true" signature="3125:3132" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1439">
-          <caret line="253" column="28" lean-forward="true" selection-start-line="253" selection-start-column="28" selection-end-line="253" selection-end-column="28" />
-          <folding>
-            <element signature="e#1#10#0" expanded="true" />
-            <element signature="e#12674#14011#0" />
+            <element signature="n#src#0;n#input#0;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
