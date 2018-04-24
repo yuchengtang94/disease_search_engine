@@ -11,7 +11,7 @@
 
 <style>
 body {
-    background-color: #FFFFF0;
+    background-color: #ffe4c4;
 }
 .sansserif {
     font-family: "Times New Roman", Times, sans-serif;
@@ -42,7 +42,8 @@ body {
 
 .rdr-sidebar-index{
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+
 }
 .similar_dis_name {
     font-family: Helvetica, Arial, sans-serif;
@@ -113,40 +114,43 @@ body {
 
 
         <div class="right_body">
-            <div class="sidebar">
-                 <!--<div class="rdr-sidebar-index">
-                    <p><a href="#name">Name</a></p>
-                    <p><a href="#introduction">Introduction</a></p>
-                    <p><a href="#symptoms">Symptoms</a></p>
-                     <p><a href="#causes">Causes</a></p>
-                    <p><a href="#treatment">Treatment</a></p>
-                </div>-->
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#name">Name</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#introduction">Introduction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#symptoms">Symptoms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#causes">Causes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#treatment">Treatment</a>
-                    </li>
-                </ul>
-             </div>
+            <div class="sidebar" role="navigation">
+            <div class="rdr-sidebar-index" role="navigation">
+                <!--<ul class="nav flex-sm-column">-->
+                      <!--<li class="nav-item">-->
+                        <!--<a class="nav-link active" href="#name" data-toggle="pill">Name</a>-->
+
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="#introduction" data-toggle="pill">Introduction</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="#symptoms" data-toggle="pill">Symptoms</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link " href="#causes" data-toggle="pill">Causes</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link " href="#treatment" data-toggle="pill">Treatment</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+             <!--</div>-->
+
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-name-tab" data-toggle="pill" href="#name" role="tab" aria-controls="v-pills-home" aria-selected="true">Name</a>
+            <a class="nav-link" id="v-pills-intro-tab" data-toggle="pill" href="#introduction" role="tab" aria-controls="v-pills-profile" aria-selected="false">Introduction</a>
+            <a class="nav-link" id="v-pills-sym-tab" data-toggle="pill" href="#symptoms" role="tab" aria-controls="v-pills-messages" aria-selected="false">Symptoms</a>
+             <a class="nav-link" id="v-pills-causes-tab" data-toggle="pill" href="#causes" role="tab" aria-controls="v-pills-messages" aria-selected="false">Causes</a>
+                <a class="nav-link" id="v-pills-treatment-tab" data-toggle="pill" href="#treatment" role="tab" aria-controls="v-pills-settings" aria-selected="false">Treatment</a><a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Symptoms</a>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-name" role="tabpanel" aria-labelledby="v-pills-name-tab"></div>
+            <div class="tab-pane fade" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab"></div>
+            <div class="tab-pane fade" id="v-pills-sym" role="tabpanel" aria-labelledby="v-pills-sym-tab"></div>
+            <div class="tab-pane fade" id="v-pills-causes" role="tabpanel" aria-labelledby="v-pills-causes-tab"></div>
+            <div class="tab-pane fade" id="v-pills-treatment" role="tabpanel" aria-labelledby="v-pills-treatment-tab"></div>
+            </div>
+
+            </div>
         </div>
-
-<ul class="">
-
-</ul>
-
-
-
-
 </div>
 </body>
