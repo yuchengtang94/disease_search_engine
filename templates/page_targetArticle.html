@@ -1,8 +1,47 @@
 <!doctype html>
+<head>
+    <title>Target Article</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $('#v-pills-tab a[href="#name"]').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+    $('#v-pills-tab a[href="#introduction"]').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+    $('#v-pills-tab a[href="#symptoms"]').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+    $('#v-pills-tab a[href="#causes"]').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+    $('#v-pills-tab a[href="#treatment"]').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+    </script>
+</head>
+
+
 <style>
+body {
+    background-color: #ffe4c4;
+}
 .sansserif {
     font-family: "Times New Roman", Times, sans-serif;
     font-weight: bold;
+}
+
+.container{
+    padding: 20px;
 }
 
 .left_body {
@@ -11,7 +50,9 @@
 }
 
 .rdr-box{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: system-ui;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .right_body {
@@ -23,78 +64,114 @@
 
 .rdr-sidebar-index{
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+
 }
 .similar_dis_name {
     font-family: Helvetica, Arial, sans-serif;
     text-text-decoration:underline;
 }
 
+
 </style>
-<body bgcolor="white">
-<h3>{{name|safe}}</h3>
-<div class="container" >
+
+<div class="container">
+    <h2 class="text-center">{{name|safe}}</h2>
     <div class="left_body">
        <!--<div class="disease" style="word-wrap:break-word; padding:10px;">
             {% for term in disease %}
                 <pre style="white-space: pre-wrap;"><strong>{{term}}</strong>: {{disease[term] | safe}}</pre>
             {% endfor %}
         </div>-->
-        <div class="rdr-box" id="name">
-            <strong>Name</strong>
-            <a name="name"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{name | safe}}</pre>
-        </div>
-        <div class="rdr-box" id="introduction">
-             <strong>Introduction</strong>
-            <a name="introduction"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{intro | safe}}</pre>
-        </div>
-         <div class="rdr-box" id="symptoms">
-             <strong>Symptoms</strong>
-            <a name="symptoms"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{symp | safe}}</pre>
-        </div>
-         <div class="rdr-box" id="causes">
-             <strong>Causes</strong>
-            <a name="causes"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{causes | safe}}</pre>
-        </div>
-         <div class="rdr-box" id="treatment">
-             <strong>Treatment</strong>
-            <a name="treatment"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{treat | safe}}</pre>
-        </div>
-        <div class="rdr-box" id = "similarDiseases">
-            <strong>Similar Diseases</strong>
-
-            {% if similar_dis_num %}
-                {% for res in similarDiseaseDict %}
-
-                    <p class="rdr-box"><a href="/similar_documents/{{res}}" target="_blank">  {{ similarDiseaseDict[res]['name']|safe }} </a> </p>
-
-
-                {% endfor %}
-            {% else %}
-                {% for res in similarDiseaseDict %}
-                    <p class="cannotfind">{{res}}</p>
-                {% endfor %}
-            {% endif %}
-
-        </div>
-
-    </div>
-
-    <div class="right_body">
-        <div class="sidebar">
-             <div class="rdr-sidebar-index">
-                <p><a href="#name">Name</a></p>
-                <p><a href="#introduction">Introduction</a></p>
-                <p><a href="#symptoms">Symptoms</a></p>
-                 <p><a href="#causes">Causes</a></p>
-                <p><a href="#treatment">Treatment</a></p>
+            <div class="rdr-box" id="name">
+                <strong>Name</strong>
+                <h1></h1>
+                <a name="name"></a>
+                <pre style="white-space: pre-wrap; font-family:system-ui; font-size: 16px; ">{{name | safe}}</pre>
             </div>
-         </div>
+            <hr>
+            <div class="rdr-box" id="introduction">
+                <strong>Introduction</strong>
+                <h1></h1>
+                <a name="introduction"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{intro | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id="symptoms">
+                <strong>Symptoms</strong>
+                <h1></h1>
+                <a name="symptoms"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{symp | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id="causes">
+                <strong>Causes</strong>
+                <h1></h1>
+                <a name="causes"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{causes | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id="treatment">
+                <strong>Treatment</strong>
+                <h1></h1>
+                <a name="treatment"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{treat | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id = "similarDiseases">
+                <strong>Similar Diseases</strong>
+                <h1></h1>
+                {% if similar_dis_num %}
+                    {% for res in similarDiseaseDict %}
+                        <p class="rdr-box"><a href="/similar_documents/{{res}}" target="_blank">  {{ similarDiseaseDict[res]['name']|safe }} </a> </p>
+                    {% endfor %}
+                {% else %}
+                    {% for res in similarDiseaseDict %}
+                        <p class="cannotfind">{{res}}</p>
+                    {% endfor %}
+                {% endif %}
+            </div>
     </div>
+
+
+
+        <div class="right_body">
+            <div class="sidebar" role="navigation">
+            <div class="rdr-sidebar-index" role="navigation">
+                <!--<ul class="nav flex-sm-column">-->
+                      <!--<li class="nav-item">-->
+                        <!--<a class="nav-link active" href="#name" data-toggle="pill">Name</a>-->
+
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="#introduction" data-toggle="pill">Introduction</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="#symptoms" data-toggle="pill">Symptoms</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link " href="#causes" data-toggle="pill">Causes</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link " href="#treatment" data-toggle="pill">Treatment</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+             <!--</div>-->
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-name-tab" data-toggle="pill" href="#name" role="tab" aria-controls="v-pills-home" aria-selected="true">Name</a>
+                <a class="nav-link" id="v-pills-intro-tab" data-toggle="pill" href="#introduction" role="tab" aria-controls="v-pills-profile" aria-selected="false">Introduction</a>
+                <a class="nav-link" id="v-pills-sym-tab" data-toggle="pill" href="#symptoms" role="tab" aria-controls="v-pills-messages" aria-selected="false">Symptoms</a>
+                <a class="nav-link" id="v-pills-causes-tab" data-toggle="pill" href="#causes" role="tab" aria-controls="v-pills-messages" aria-selected="false">Causes</a>
+                <a class="nav-link" id="v-pills-treatment-tab" data-toggle="pill" href="#treatment" role="tab" aria-controls="v-pills-settings" aria-selected="false">Treatment</a><a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Symptoms</a>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-name" role="tabpanel" aria-labelledby="v-pills-name-tab"></div>
+                <div class="tab-pane fade" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab"></div>
+                <div class="tab-pane fade" id="v-pills-sym" role="tabpanel" aria-labelledby="v-pills-sym-tab"></div>
+                <div class="tab-pane fade" id="v-pills-causes" role="tabpanel" aria-labelledby="v-pills-causes-tab"></div>
+                <div class="tab-pane fade" id="v-pills-treatment" role="tabpanel" aria-labelledby="v-pills-treatment-tab"></div>
+            </div>
+
+            </div>
+        </div>
 </div>
 </body>
