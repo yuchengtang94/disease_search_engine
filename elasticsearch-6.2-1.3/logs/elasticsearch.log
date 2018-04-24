@@ -231,3 +231,6 @@ Caused by: java.lang.IllegalStateException: plugins directory [/Users/yancheng/!
 [2018-04-23T18:23:48,373][INFO ][o.e.c.m.MetaDataMappingService] [Rp_urP2] [test_rare_disease_index/tXSh02g2SKiiBd9HHXVRFQ] update_mapping [disease]
 [2018-04-23T18:38:44,040][INFO ][o.e.c.m.MetaDataDeleteIndexService] [Rp_urP2] [sample_film_index/n8KiGoRBTDy-MjuLKBF7RQ] deleting index
 [2018-04-23T18:38:44,077][INFO ][o.e.c.m.MetaDataCreateIndexService] [Rp_urP2] [sample_film_index] creating index, cause [api], templates [], shards [5]/[1], mappings [movie]
+[2018-04-23T20:55:24,154][INFO ][o.e.c.m.MetaDataDeleteIndexService] [Rp_urP2] [test_rare_disease_index/tXSh02g2SKiiBd9HHXVRFQ] deleting index
+[2018-04-23T20:55:24,209][INFO ][o.e.c.m.MetaDataCreateIndexService] [Rp_urP2] [test_rare_disease_index] creating index, cause [api], templates [], shards [5]/[1], mappings [disease]
+[2018-04-23T20:55:24,748][INFO ][o.e.c.m.MetaDataMappingService] [Rp_urP2] [test_rare_disease_index/g9oLzS_3R3WSXynRD9eY2Q] update_mapping [disease]
