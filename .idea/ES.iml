@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+<<<<<<< HEAD:.idea/ES_example.iml
+    <orderEntry type="jdk" jdkName="Python 2.7.13 (~/anaconda2/bin/python)" jdkType="Python SDK" />
+||||||| merged common ancestors
+    <orderEntry type="jdk" jdkName="Python 2.7" jdkType="Python SDK" />
+=======
+    <orderEntry type="inheritedJdk" />
+>>>>>>> 474afc6c80f91e574833d80894ced4fe61698ca9:.idea/ES.iml
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/templates" />
+      </list>
+    </option>
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>
