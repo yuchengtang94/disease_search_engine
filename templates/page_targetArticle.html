@@ -1,17 +1,33 @@
 <!doctype html>
+<head>
+    <title>Target Article</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body bgcolor="white">
 <style>
 .sansserif {
     font-family: "Times New Roman", Times, sans-serif;
     font-weight: bold;
 }
 
+.container{
+    padding: 20px;
+    h2{}
+}
 .left_body {
     width: 70%;
     float: left;
 }
 
 .rdr-box{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: system-ui;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .right_body {
@@ -30,59 +46,65 @@
     text-text-decoration:underline;
 }
 
+
 </style>
-<body bgcolor="white">
-<h3>{{name|safe}}</h3>
-<div class="container" >
+
+<div class="container">
+    <h2 class="text-center">{{name|safe}}</h2>
     <div class="left_body">
        <!--<div class="disease" style="word-wrap:break-word; padding:10px;">
             {% for term in disease %}
                 <pre style="white-space: pre-wrap;"><strong>{{term}}</strong>: {{disease[term] | safe}}</pre>
             {% endfor %}
         </div>-->
-        <div class="rdr-box" id="name">
-            <strong>Name</strong>
-            <a name="name"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{name | safe}}</pre>
-        </div>
-        <div class="rdr-box" id="introduction">
-             <strong>Introduction</strong>
-            <a name="introduction"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{intro | safe}}</pre>
-        </div>
-         <div class="rdr-box" id="symptoms">
-             <strong>Symptoms</strong>
-            <a name="symptoms"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{symp | safe}}</pre>
-        </div>
-         <div class="rdr-box" id="causes">
-             <strong>Causes</strong>
-            <a name="causes"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{causes | safe}}</pre>
-        </div>
-         <div class="rdr-box" id="treatment">
-             <strong>Treatment</strong>
-            <a name="treatment"></a>
-            <pre style="white-space: pre-wrap; font-size: 15px; ">{{treat | safe}}</pre>
-        </div>
-        <div class="rdr-box" id = "similarDiseases">
-            <strong>Similar Diseases</strong>
-
-            {% if similar_dis_num %}
-                {% for res in similarDiseaseDict %}
-
-                    <p class="rdr-box"><a href="/similar_documents/{{res}}" target="_blank">  {{ similarDiseaseDict[res]['name']|safe }} </a> </p>
-
-
-                {% endfor %}
-            {% else %}
-                {% for res in similarDiseaseDict %}
-                    <p class="cannotfind">{{res}}</p>
-                {% endfor %}
-            {% endif %}
-
-        </div>
-
+            <div class="rdr-box" id="name">
+                <strong>Name</strong>
+                <h1></h1>
+                <a name="name"></a>
+                <pre style="white-space: pre-wrap; font-family:system-ui; font-size: 16px; ">{{name | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id="introduction">
+                <strong>Introduction</strong>
+                <h1></h1>
+                <a name="introduction"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{intro | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id="symptoms">
+                <strong>Symptoms</strong>
+                <h1></h1>
+                <a name="symptoms"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{symp | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id="causes">
+                <strong>Causes</strong>
+                <h1></h1>
+                <a name="causes"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{causes | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id="treatment">
+                <strong>Treatment</strong>
+                <h1></h1>
+                <a name="treatment"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{treat | safe}}</pre>
+            </div>
+            <hr>
+            <div class="rdr-box" id = "similarDiseases">
+                <strong>Similar Diseases</strong>
+                <h1></h1>
+                {% if similar_dis_num %}
+                    {% for res in similarDiseaseDict %}
+                        <p class="rdr-box"><a href="/similar_documents/{{res}}" target="_blank">  {{ similarDiseaseDict[res]['name']|safe }} </a> </p>
+                    {% endfor %}
+                {% else %}
+                    {% for res in similarDiseaseDict %}
+                        <p class="cannotfind">{{res}}</p>
+                    {% endfor %}
+                {% endif %}
+            </div>
     </div>
 
     <div class="right_body">
