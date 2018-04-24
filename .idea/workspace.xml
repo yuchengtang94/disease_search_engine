@@ -3,68 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="1602d847-d745-4903-8107-ca9e6a5e4a47" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/_state/global-32.st" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/_state/state-0.st" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/index/_0.cfe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/index/_0.cfs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/index/_0.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/index/_1.cfe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/index/_1.cfs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/index/_1.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/index/segments_3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/index/write.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/translog/translog-1.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/translog/translog-1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/translog/translog-2.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/0/translog/translog.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/_state/state-0.st" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/index/_0.cfe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/index/_0.cfs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/index/_0.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/index/_1.cfe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/index/_1.cfs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/index/_1.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/index/segments_3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/index/write.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/translog/translog-1.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/translog/translog-1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/translog/translog-2.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/1/translog/translog.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/_state/state-0.st" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/index/_0.cfe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/index/_0.cfs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/index/_0.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/index/_1.cfe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/index/_1.cfs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/index/_1.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/index/segments_3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/index/write.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/translog/translog-1.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/translog/translog-1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/translog/translog-2.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/2/translog/translog.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/_state/state-0.st" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/index/_0.cfe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/index/_0.cfs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/index/_0.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/index/segments_3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/index/write.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/translog/translog-1.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/translog/translog-1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/translog/translog-2.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/3/translog/translog.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/_state/state-0.st" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/index/_0.cfe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/index/_0.cfs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/index/_0.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/index/segments_3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/index/write.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/translog/translog-1.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/translog/translog-1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/translog/translog-2.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/4/translog/translog.ckp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/tXSh02g2SKiiBd9HHXVRFQ/_state/state-4.st" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/final_rare_disease.json" afterPath="$PROJECT_DIR$/final_rare_disease.json" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/0/index/segments_1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/0/translog/translog.ckp" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/0/translog/translog.ckp" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/1/index/segments_1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/1/translog/translog.ckp" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/1/translog/translog.ckp" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/2/index/segments_1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/2/translog/translog.ckp" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/2/translog/translog.ckp" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/3/index/segments_1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/3/translog/translog.ckp" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/3/translog/translog.ckp" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/4/index/segments_1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/4/translog/translog.ckp" afterPath="$PROJECT_DIR$/elasticsearch-6.2-1.3/data/nodes/0/indices/g9oLzS_3R3WSXynRD9eY2Q/4/translog/translog.ckp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,7 +24,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/disease_search_engine$query.coverage" NAME="query Coverage Results" MODIFIED="1524380208742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/disease_search_engine$index.coverage" NAME="index Coverage Results" MODIFIED="1524370735955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ES$query.coverage" NAME="query Coverage Results" MODIFIED="1524531329491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ES$query.coverage" NAME="query Coverage Results" MODIFIED="1524531761458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ES$index.coverage" NAME="index Coverage Results" MODIFIED="1524531323739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -99,8 +47,8 @@
       <file leaf-file-name="query.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/query.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            <state relative-caret-position="146">
+              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
               </folding>
@@ -122,9 +70,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="931">
               <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding>
-                <element signature="n#src#0;n#input#0;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,7 +153,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,6 +170,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,16 +429,16 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34549356" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34549356" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25579977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26190478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -501,6 +447,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,9 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="n#src#0;n#input#0;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -719,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/query.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="146">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="e#1#10#0" expanded="true" />
           </folding>
