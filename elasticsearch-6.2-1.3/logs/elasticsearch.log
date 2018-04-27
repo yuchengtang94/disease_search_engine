@@ -36,3 +36,57 @@
 [2018-04-24T12:48:04,018][INFO ][o.e.c.m.MetaDataDeleteIndexService] [Rp_urP2] [test_rare_disease_index/g9oLzS_3R3WSXynRD9eY2Q] deleting index
 [2018-04-24T12:48:04,084][INFO ][o.e.c.m.MetaDataCreateIndexService] [Rp_urP2] [test_rare_disease_index] creating index, cause [api], templates [], shards [5]/[1], mappings [disease]
 [2018-04-24T12:48:04,600][INFO ][o.e.c.m.MetaDataMappingService] [Rp_urP2] [test_rare_disease_index/nHagYnoZTU2RxdlUIibclQ] update_mapping [disease]
+[2018-04-24T13:26:45,040][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.3.jar:6.2.3]
+[2018-04-24T13:26:45,046][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.3.jar:6.2.3]
+Caused by: java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.3.jar:6.2.3]
+	... 6 more
+[2018-04-24T13:27:00,395][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.3.jar:6.2.3]
+[2018-04-24T13:27:00,401][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.3.jar:6.2.3]
+Caused by: java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.3.jar:6.2.3]
+	... 6 more
