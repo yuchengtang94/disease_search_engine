@@ -15,10 +15,10 @@ app = Flask(__name__)
 tmp_symptoms = ""
 tmp_name = ""
 
-tmp_introduction = ""
+tmp_affected_populations = ""
 tmp_causes = ""
 tmp_treatment = ""
-text_select = "Conjunctive"
+search_options = "Conjunctive"
 
 inform = ""
 
@@ -38,12 +38,12 @@ def results(page):
     global tmp_name
 
     global gresults
-    global text_select
+    global search_options
 
-    global tmp_introduction
+    global tmp_affected_populations
 
     global tmp_causes
-    global tmp_treatment
+    global tmp_other_information
 
     global inform
 
@@ -52,40 +52,45 @@ def results(page):
         page = int(page.encode('utf-8'))
 
     if request.method == 'POST':
+
         symptoms_query = request.form['query']
 
-        introduction_query = request.form['introduction']
+        affected_populations_query = request.form['affected_populations']
 
         causes_query = request.form['causes']
-        treatment_query = request.form['treatment']
 
-        text_select = request.form['freetext_select']
+        other_information_query = request.form['other_information']
+
+
+
+        search_options = request.form['options']
         # print text_select
 
         # update global variable template date
         tmp_symptoms = symptoms_query
 
-        tmp_introduction = introduction_query
+        tmp_affected_populations = affected_populations_query
         # tmp_country = country_query
         tmp_causes = causes_query
-        tmp_treatment = treatment_query
+        tmp_other_information = other_information_query
 
     else:
         symptoms_query = tmp_symptoms
 
-        introduction_query = tmp_introduction
+        affected_populations_query = tmp_affected_populations
 
         causes_query = tmp_causes
-        treatment_query = tmp_treatment
+
+        other_information_query = tmp_other_information
 
     # store query values to display in search box while browsing
     shows = {}
     shows['symptoms'] = symptoms_query
 
-    shows['introduction'] = introduction_query
+    shows['affected_populations'] = affected_populations_query
 
     shows['causes'] = causes_query
-    shows['treatment'] = treatment_query
+    shows['other_information'] = other_information_query
 
     # search
     mDisease = Disease()
@@ -115,14 +120,14 @@ def results(page):
             phrase_text_query.append(symptoms_query[beg: i])
             beg = i + 1
 
-        if text_search(str_text_query, phrase_text_query, q) is False and text_select == "Conjunctive":
-            text_select = "Disjunctive"
+        if text_search(str_text_query, phrase_text_query, q) is False and search_options == "Conjunctive":
+            search_options = "Disjunctive"
             inform = " The text query has no match result, showing the result of disjunctive search"
             print inform
 
         if len(str_text_query) > 0:
             print "str_text_query=" + str_text_query
-            if text_select == "Conjunctive":
+            if search_options == "Conjunctive":
                 q = Q('multi_match', query = str_text_query, type='cross_fields', fields=['symptoms', 'name'], operator='and')
             else :
                 q = Q("match", symptoms = str_text_query) | Q('match', name = str_text_query)
@@ -137,22 +142,23 @@ def results(page):
 
         s = s.query(q)
 
-    if len(introduction_query) > 0:
-        s = s.query('match', introuduction=introduction_query)
+    if len(affected_populations_query) > 0:
+        s = s.query('match', affected_populations=affected_populations_query)
 
 
     if len(causes_query) > 0:
         s = s.query('match', causes=causes_query)
-    if len(treatment_query) > 0:
-        s = s.query('match', treatment=treatment_query)
+    if len(other_information_query) > 0:
+        s = s.query('multi_match', query=other_information_query, type='cross_fields', fields=['introduction', 'diagnosis'], operator='and')
 
     # highlight
     s = s.highlight_options(pre_tags='<mark>', post_tags='</mark>')
     s = s.highlight('symptoms', fragment_size=999999999, number_of_fragments=1)
     s = s.highlight('name', fragment_size=999999999, number_of_fragments=1)
     s = s.highlight('causes', fragment_size=999999999, number_of_fragments=1)
-    s = s.highlight('introduction', fragment_size=999999999, number_of_fragments=1)
+    s = s.highlight('affected_populations', fragment_size=999999999, number_of_fragments=1)
     s = s.highlight('treatment', fragment_size=999999999, number_of_fragments=1)
+    s = s.highlight('diagnosis', fragment_size=999999999, number_of_fragments=1)
 
     # extract data for current page
     start = 0 + (page-1)*10
@@ -185,6 +191,11 @@ def results(page):
             else:
                 result['introduction'] = hit.introduction
 
+            if 'affected_populations' in hit.meta.highlight:
+                result['affected_populations'] = hit.meta.highlight.affected_populations[0]
+            else:
+                result['affected_populations'] = hit.affected_populations
+
             if 'treatment' in hit.meta.highlight:
 
                 result['treatment'] = hit.meta.highlight.treatment[0]
@@ -197,12 +208,20 @@ def results(page):
             else:
                 result['causes'] = hit.causes
 
+            if 'diagnosis' in hit.meta.highlight:
+                result['diagnosis'] = hit.meta.highlight.diagnosis[0]
+            else:
+                result['diagnosis'] = hit.diagnosis
+
         else:
             result['name'] = hit.name
             result['symptoms'] = hit.symptoms
-            result['introduction'] = hit.introduction
+            result['affected_populations'] = hit.affected_populations
             result['causes'] = hit.causes
             result['treatment'] = hit.treatment
+            result['diagnosis'] = hit.diagnosis
+            result['introduction'] = hit.introduction
+
         result['_id'] = hit._id
         resultList[hit.meta.id] = result
 
@@ -233,6 +252,8 @@ def documents(res):
     diseaseSymp = disease['symptoms']
     diseaseCauses = disease['causes']
     diseaseTreat = disease['treatment']
+    diseasePopu = disease['affected_populations']
+    diseaseDiag = disease['diagnosis']
 
 
     diseaseId = disease['_id']
@@ -245,8 +266,8 @@ def documents(res):
                 s += item + ",\n "
             disease[term] = s
 
-    return render_template('page_targetArticle.html', disease=disease, name=diseaseName, intro=diseaseIntro, symp=diseaseSymp,similar_dis_num = similar_dis_num,
-                           causes=diseaseCauses, treat=diseaseTreat, similarDiseaseDict = similarDisease)
+    return render_template('page_targetArticle.html', disease=disease, name=diseaseName, intro=diseaseIntro,
+                           symp=diseaseSymp, similar_dis_num=similar_dis_num, causes=diseaseCauses, treat=diseaseTreat, popu=diseasePopu, diag=diseaseDiag,similarDiseaseDict=similarDisease)
 
 
 def get_similar_docs(diseaseId):
@@ -271,6 +292,8 @@ def get_similar_docs(diseaseId):
         # print "similar disease hit.name = " + hit.name
         result['symptoms'] = hit.symptoms
         result['introduction'] = hit.introduction
+        result['diagnosis'] = hit.diagnosis
+        result['affected_populations'] = hit.affected_populations
         result['causes'] = hit.causes
         result['treatment'] = hit.treatment
         result['_id'] = hit._id
@@ -289,6 +312,8 @@ def similar_documents(res):
     diseaseSymp = disease['symptoms']
     diseaseCauses = disease['causes']
     diseaseTreat = disease['treatment']
+    diseasePopu = disease['affected_populations']
+    diseaseDiag = disease['diagnosis']
 
     diseaseId = disease['_id']
     similarDisease = get_similar_docs(diseaseId)
@@ -301,7 +326,7 @@ def similar_documents(res):
             disease[term] = s
 
     return render_template('page_targetArticle.html', disease=disease, name=diseaseName, intro=diseaseIntro, symp=diseaseSymp,similar_dis_num = similar_dis_num,
-                           causes=diseaseCauses, treat=diseaseTreat, similarDiseaseDict = similarDisease)
+                           causes=diseaseCauses, treat=diseaseTreat, popu = diseasePopu, diag = diseaseDiag, similarDiseaseDict = similarDisease)
 
 
 def text_search(str_text_query,phrase_text_query,q):
@@ -309,7 +334,7 @@ def text_search(str_text_query,phrase_text_query,q):
     s = mDisease.search()
     if len(str_text_query) > 0:
         # print "str_text_query=" + str_text_query
-        if text_select == "Conjunctive":
+        if search_options == "Conjunctive":
             q = Q('multi_match', query = str_text_query, type='cross_fields', fields=['name', 'symptoms'], operator='and')
         else :
             q = Q("match", name = str_text_query) | Q('match', symptoms = str_text_query)

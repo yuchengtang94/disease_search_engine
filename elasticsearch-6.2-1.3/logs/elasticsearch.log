@@ -1,42 +1,4 @@
-[2018-04-24T00:41:48,144][INFO ][o.e.n.Node               ] [Rp_urP2] stopping ...
-[2018-04-24T00:41:48,188][INFO ][o.e.n.Node               ] [Rp_urP2] stopped
-[2018-04-24T00:41:48,188][INFO ][o.e.n.Node               ] [Rp_urP2] closing ...
-[2018-04-24T00:41:48,197][INFO ][o.e.n.Node               ] [Rp_urP2] closed
-[2018-04-24T12:47:17,868][INFO ][o.e.n.Node               ] [] initializing ...
-[2018-04-24T12:47:17,925][INFO ][o.e.e.NodeEnvironment    ] [Rp_urP2] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [262.5gb], net total_space [465.6gb], types [apfs]
-[2018-04-24T12:47:17,926][INFO ][o.e.e.NodeEnvironment    ] [Rp_urP2] heap size [989.8mb], compressed ordinary object pointers [true]
-[2018-04-24T12:47:17,956][INFO ][o.e.n.Node               ] node name [Rp_urP2] derived from node ID [Rp_urP2GToa0FLkSZFR-cA]; set [node.name] to override
-[2018-04-24T12:47:17,956][INFO ][o.e.n.Node               ] version[6.2.3], pid[73754], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.13.2/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
-[2018-04-24T12:47:17,956][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/qx/rj8h8d5s0rb3h194604cx6jm0000gn/T/elasticsearch.suXP1RC5, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/yucheng/Desktop/course/IR/final_project/ES/elasticsearch-6.2-1.3, -Des.path.conf=/Users/yucheng/Desktop/course/IR/final_project/ES/elasticsearch-6.2-1.3/config]
-[2018-04-24T12:47:18,520][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [aggs-matrix-stats]
-[2018-04-24T12:47:18,520][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [analysis-common]
-[2018-04-24T12:47:18,520][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [ingest-common]
-[2018-04-24T12:47:18,520][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [lang-expression]
-[2018-04-24T12:47:18,521][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [lang-mustache]
-[2018-04-24T12:47:18,521][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [lang-painless]
-[2018-04-24T12:47:18,523][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [mapper-extras]
-[2018-04-24T12:47:18,523][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [parent-join]
-[2018-04-24T12:47:18,523][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [percolator]
-[2018-04-24T12:47:18,523][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [rank-eval]
-[2018-04-24T12:47:18,523][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [reindex]
-[2018-04-24T12:47:18,523][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [repository-url]
-[2018-04-24T12:47:18,523][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [transport-netty4]
-[2018-04-24T12:47:18,523][INFO ][o.e.p.PluginsService     ] [Rp_urP2] loaded module [tribe]
-[2018-04-24T12:47:18,524][INFO ][o.e.p.PluginsService     ] [Rp_urP2] no plugins loaded
-[2018-04-24T12:47:20,301][INFO ][o.e.d.DiscoveryModule    ] [Rp_urP2] using discovery type [zen]
-[2018-04-24T12:47:20,682][INFO ][o.e.n.Node               ] initialized
-[2018-04-24T12:47:20,682][INFO ][o.e.n.Node               ] [Rp_urP2] starting ...
-[2018-04-24T12:47:20,810][INFO ][o.e.t.TransportService   ] [Rp_urP2] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
-[2018-04-24T12:47:23,862][INFO ][o.e.c.s.MasterService    ] [Rp_urP2] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {Rp_urP2}{Rp_urP2GToa0FLkSZFR-cA}{uU4ZvVUFQImffa_D73Vghg}{127.0.0.1}{127.0.0.1:9300}
-[2018-04-24T12:47:23,867][INFO ][o.e.c.s.ClusterApplierService] [Rp_urP2] new_master {Rp_urP2}{Rp_urP2GToa0FLkSZFR-cA}{uU4ZvVUFQImffa_D73Vghg}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {Rp_urP2}{Rp_urP2GToa0FLkSZFR-cA}{uU4ZvVUFQImffa_D73Vghg}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
-[2018-04-24T12:47:23,880][INFO ][o.e.h.n.Netty4HttpServerTransport] [Rp_urP2] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
-[2018-04-24T12:47:23,880][INFO ][o.e.n.Node               ] [Rp_urP2] started
-[2018-04-24T12:47:24,019][INFO ][o.e.g.GatewayService     ] [Rp_urP2] recovered [2] indices into cluster_state
-[2018-04-24T12:47:24,345][INFO ][o.e.c.r.a.AllocationService] [Rp_urP2] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[sample_film_index][3]] ...]).
-[2018-04-24T12:48:04,018][INFO ][o.e.c.m.MetaDataDeleteIndexService] [Rp_urP2] [test_rare_disease_index/g9oLzS_3R3WSXynRD9eY2Q] deleting index
-[2018-04-24T12:48:04,084][INFO ][o.e.c.m.MetaDataCreateIndexService] [Rp_urP2] [test_rare_disease_index] creating index, cause [api], templates [], shards [5]/[1], mappings [disease]
-[2018-04-24T12:48:04,600][INFO ][o.e.c.m.MetaDataMappingService] [Rp_urP2] [test_rare_disease_index/nHagYnoZTU2RxdlUIibclQ] update_mapping [disease]
-[2018-04-24T13:26:45,040][ERROR][o.e.b.Bootstrap          ] Exception
+[2018-04-28T18:03:31,368][ERROR][o.e.b.Bootstrap          ] Exception
 java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
 	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
@@ -48,7 +10,7 @@ java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/cours
 	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.3.jar:6.2.3]
-[2018-04-24T13:26:45,046][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+[2018-04-28T18:03:31,381][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
 org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
 	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.3.jar:6.2.3]
@@ -63,7 +25,7 @@ Caused by: java.lang.IllegalStateException: plugins directory [/Users/yucheng/De
 	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.3.jar:6.2.3]
 	... 6 more
-[2018-04-24T13:27:00,395][ERROR][o.e.b.Bootstrap          ] Exception
+[2018-04-28T18:03:48,944][ERROR][o.e.b.Bootstrap          ] Exception
 java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
 	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
@@ -75,7 +37,34 @@ java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/cours
 	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.3.jar:6.2.3]
-[2018-04-24T13:27:00,401][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+[2018-04-28T18:03:48,950][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.3.jar:6.2.3]
+Caused by: java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.3.jar:6.2.3]
+	... 6 more
+[2018-04-28T18:04:04,000][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.3.jar:6.2.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.3.jar:6.2.3]
+[2018-04-28T18:04:04,005][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
 org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/yucheng/Desktop/course/IR/final_project/disease_search_engine/elasticsearch-6.2-1.3/plugins] not found
 	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.3.jar:6.2.3]
 	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.3.jar:6.2.3]

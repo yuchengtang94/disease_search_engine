@@ -1,20 +1,19 @@
 Java HotSpot(TM) 64-Bit Server VM (25.144-b01) for bsd-amd64 JRE (1.8.0_144-b01), built on Jul 21 2017 22:07:42 by "java_re" with gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
-Memory: 4k page, physical 16777216k(2472700k free)
+Memory: 4k page, physical 16777216k(1215028k free)
 
 /proc/meminfo:
 
 CommandLine flags: -XX:+AlwaysPreTouch -XX:CMSInitiatingOccupancyFraction=75 -XX:GCLogFileSize=67108864 -XX:+HeapDumpOnOutOfMemoryError -XX:InitialHeapSize=1073741824 -XX:MaxHeapSize=1073741824 -XX:MaxNewSize=357916672 -XX:MaxTenuringThreshold=6 -XX:NewSize=357916672 -XX:NumberOfGCLogFiles=32 -XX:OldPLABSize=16 -XX:OldSize=715825152 -XX:-OmitStackTraceInFastThrow -XX:+PrintGC -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:ThreadStackSize=1024 -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseConcMarkSweepGC -XX:+UseGCLogFileRotation -XX:+UseParNewGC 
-2018-04-24T13:26:59.931+0500: 0.655: Total time for which application threads were stopped: 0.0000618 seconds, Stopping threads took: 0.0000081 seconds
-2018-04-24T13:26:59.964+0500: 0.687: Total time for which application threads were stopped: 0.0000583 seconds, Stopping threads took: 0.0000081 seconds
-2018-04-24T13:27:00.172+0500: 0.896: Total time for which application threads were stopped: 0.0001095 seconds, Stopping threads took: 0.0000095 seconds
-2018-04-24T13:27:00.195+0500: 0.918: Total time for which application threads were stopped: 0.0001177 seconds, Stopping threads took: 0.0000101 seconds
-2018-04-24T13:27:00.201+0500: 0.924: Total time for which application threads were stopped: 0.0001370 seconds, Stopping threads took: 0.0000118 seconds
-2018-04-24T13:27:00.337+0500: 1.060: Total time for which application threads were stopped: 0.0001373 seconds, Stopping threads took: 0.0000085 seconds
+2018-04-28T18:04:03.561+0500: 0.635: Total time for which application threads were stopped: 0.0000688 seconds, Stopping threads took: 0.0000090 seconds
+2018-04-28T18:04:03.772+0500: 0.846: Total time for which application threads were stopped: 0.0001125 seconds, Stopping threads took: 0.0000110 seconds
+2018-04-28T18:04:03.799+0500: 0.873: Total time for which application threads were stopped: 0.0001076 seconds, Stopping threads took: 0.0000106 seconds
+2018-04-28T18:04:03.804+0500: 0.878: Total time for which application threads were stopped: 0.0001206 seconds, Stopping threads took: 0.0000117 seconds
+2018-04-28T18:04:03.942+0500: 1.016: Total time for which application threads were stopped: 0.0001410 seconds, Stopping threads took: 0.0000093 seconds
 Heap
  par new generation   total 314560K, used 72701K [0x0000000780000000, 0x0000000795550000, 0x0000000795550000)
-  eden space 279616K,  26% used [0x0000000780000000, 0x00000007846ff6c0, 0x0000000791110000)
+  eden space 279616K,  26% used [0x0000000780000000, 0x00000007846ff5e8, 0x0000000791110000)
   from space 34944K,   0% used [0x0000000791110000, 0x0000000791110000, 0x0000000793330000)
   to   space 34944K,   0% used [0x0000000793330000, 0x0000000793330000, 0x0000000795550000)
  concurrent mark-sweep generation total 699072K, used 0K [0x0000000795550000, 0x00000007c0000000, 0x00000007c0000000)
- Metaspace       used 13019K, capacity 13316K, committed 13568K, reserved 1060864K
+ Metaspace       used 13025K, capacity 13316K, committed 13568K, reserved 1060864K
   class space    used 1616K, capacity 1730K, committed 1792K, reserved 1048576K
