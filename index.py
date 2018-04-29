@@ -39,6 +39,7 @@ class Disease(DocType):
         symptoms = Text(analyzer=my_analyzer)
         causes = Text(analyzer=my_analyzer)
         treatment = Text(analyzer=my_analyzer)
+        # disease_type = Text(None)
 
     class Meta:
         index = 'test_rare_disease_index'

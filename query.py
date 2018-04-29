@@ -16,6 +16,7 @@ tmp_symptoms = ""
 tmp_name = ""
 
 tmp_affected_populations = ""
+tmp_other_information = ""
 tmp_causes = ""
 tmp_treatment = ""
 disease_type = "All Disease"
@@ -65,8 +66,6 @@ def results(page):
         disease_type = request.form['disease_type']
 
 
-        # print text_select
-
         # update global variable template date
         tmp_symptoms = symptoms_query
 
@@ -101,6 +100,7 @@ def results(page):
     shows['causes'] = causes_query
     shows['other_information'] = other_information_query
 
+
     # search
     mDisease = Disease()
     s = mDisease.search()
@@ -112,6 +112,7 @@ def results(page):
         beg = 0
 
         q = None
+        # select the phrases surrounded by "
         while beg < len(symptoms_query):
             i = symptoms_query.find("\"",beg)
             # print "i =" + str(i)
@@ -129,27 +130,29 @@ def results(page):
             phrase_text_query.append(symptoms_query[beg: i])
             beg = i + 1
 
-        if text_search(str_text_query, phrase_text_query, q) is False and disease_type == "Conjunctive":
-            disease_type = "Disjunctive"
-            inform = " The text query has no match result, showing the result of disjunctive search"
-            print inform
+        # if text_search(str_text_query, phrase_text_query, q) is False and disease_type == "Conjunctive":
+        #     disease_type = "Disjunctive"
+        #     inform = " The text query has no match result, showing the result of disjunctive search"
+        #     print inform
 
+        # remaining query except for phrase surrounded by "
         if len(str_text_query) > 0:
-            print "str_text_query=" + str_text_query
-            if disease_type == "Conjunctive":
-                q = Q('multi_match', query = str_text_query, type='cross_fields', fields=['symptoms', 'name'], operator='and')
-            else :
-                q = Q("match", symptoms = str_text_query) | Q('match', name = str_text_query)
+            q = Q("match", symptoms = str_text_query) | Q('match', name = str_text_query)
 
-        print "phrases:" + str(phrase_text_query)
+        # print "phrases:" + str(phrase_text_query)
         for phrase in phrase_text_query:
-            print "phrase=" + phrase
+            # meaning no remaining query except phrase
             if q == None:
                 q = Q("match_phrase", symptoms = phrase) | Q("match_phrase", name = phrase)
             else:
                 q |= Q("match_phrase", symptoms = phrase) | Q("match_phrase", name = phrase)
 
         s = s.query(q)
+
+    if disease_type == "Common Disease":
+        s = s.query("match", disease_type="Common Disease")
+    elif disease_type == "Rare Disease":
+        s = s.query("match", disease_type="Rare Disease")
 
     if len(affected_populations_query) > 0:
         s = s.query('match', affected_populations=affected_populations_query)
@@ -168,6 +171,7 @@ def results(page):
     s = s.highlight('affected_populations', fragment_size=999999999, number_of_fragments=1)
     s = s.highlight('treatment', fragment_size=999999999, number_of_fragments=1)
     s = s.highlight('diagnosis', fragment_size=999999999, number_of_fragments=1)
+    s = s.highlight('disease_type', fragment_size=999999999, number_of_fragments=1)
 
     # extract data for current page
     start = 0 + (page-1)*10
@@ -175,8 +179,6 @@ def results(page):
 
     # execute search
     response = s[start:end].execute()
-
-    hitscount = len(response.hits)
 
     # insert data into response
     resultList = {}
@@ -231,13 +233,17 @@ def results(page):
             result['diagnosis'] = hit.diagnosis
             result['introduction'] = hit.introduction
 
+
         result['_id'] = hit._id
         resultList[hit.meta.id] = result
+        result['disease_type'] = hit.disease_type
 
     gresults = resultList
 
     # get the number of results
     result_num = response.hits.total
+
+    print "other info:" + shows['other_information']
 
     # if we find the results, extract title and text information from doc_data, else do nothing
     if result_num > 0:
@@ -263,6 +269,7 @@ def documents(res):
     diseaseTreat = disease['treatment']
     diseasePopu = disease['affected_populations']
     diseaseDiag = disease['diagnosis']
+    diseaseType = disease['disease_type']
 
 
     diseaseId = disease['_id']
@@ -276,7 +283,8 @@ def documents(res):
             disease[term] = s
 
     return render_template('page_targetArticle.html', disease=disease, name=diseaseName, intro=diseaseIntro,
-                           symp=diseaseSymp, similar_dis_num=similar_dis_num, causes=diseaseCauses, treat=diseaseTreat, popu=diseasePopu, diag=diseaseDiag,similarDiseaseDict=similarDisease)
+                           symp=diseaseSymp, similar_dis_num=similar_dis_num, causes=diseaseCauses, treat=diseaseTreat,
+                           popu=diseasePopu, diag=diseaseDiag,similarDiseaseDict=similarDisease, diseaseType = diseaseType)
 
 
 def get_similar_docs(diseaseId):
@@ -306,12 +314,14 @@ def get_similar_docs(diseaseId):
         result['causes'] = hit.causes
         result['treatment'] = hit.treatment
         result['_id'] = hit._id
+        result['disease_type'] = hit.disease_type
         resultList[hit.meta.id] = result
 
     g_similar_results = resultList
     similar_dis_num = len(resultList)
     return resultList
 
+# click similar disease to get document
 @app.route("/similar_documents/<res>", methods=['GET'])
 def similar_documents(res):
     global g_similar_results
@@ -323,6 +333,8 @@ def similar_documents(res):
     diseaseTreat = disease['treatment']
     diseasePopu = disease['affected_populations']
     diseaseDiag = disease['diagnosis']
+    diseaseType = disease['disease_type']
+
 
     diseaseId = disease['_id']
     similarDisease = get_similar_docs(diseaseId)
@@ -334,38 +346,39 @@ def similar_documents(res):
                 s += item + ",\n "
             disease[term] = s
 
-    return render_template('page_targetArticle.html', disease=disease, name=diseaseName, intro=diseaseIntro, symp=diseaseSymp,similar_dis_num = similar_dis_num,
-                           causes=diseaseCauses, treat=diseaseTreat, popu = diseasePopu, diag = diseaseDiag, similarDiseaseDict = similarDisease)
+    return render_template('page_targetArticle.html', disease=disease, name=diseaseName, intro=diseaseIntro, symp=diseaseSymp,
+                           similar_dis_num = similar_dis_num,causes=diseaseCauses, treat=diseaseTreat, popu = diseasePopu,
+                           diag = diseaseDiag, similarDiseaseDict = similarDisease,diseaseType = diseaseType)
 
 
-def text_search(str_text_query,phrase_text_query,q):
-    mDisease = Disease()
-    s = mDisease.search()
-    if len(str_text_query) > 0:
-        # print "str_text_query=" + str_text_query
-        if disease_type == "Conjunctive":
-            q = Q('multi_match', query = str_text_query, type='cross_fields', fields=['name', 'symptoms'], operator='and')
-        else :
-            q = Q("match", name = str_text_query) | Q('match', symptoms = str_text_query)
-
-    # print "phrases:" + str(phrase_text_query)
-    for phrase in phrase_text_query:
-        # print "phrase=" + phrase
-        if q is None:
-            q = Q("match_phrase", name = phrase) | Q("match_phrase", symptoms = phrase)
-        else:
-            q |= Q("match_phrase", name = phrase) | Q("match_phrase", symptoms = phrase)
-
-    start = 0
-    end = 10
-    s = s.query(q)
-
-    # execute search
-    response = s[start:end].execute()
-    if response.hits.total == 0:
-        # print "response is 0"
-        return False
-    else: return True
+# def text_search(str_text_query,phrase_text_query,q):
+#     mDisease = Disease()
+#     s = mDisease.search()
+#     if len(str_text_query) > 0:
+#         # print "str_text_query=" + str_text_query
+#         if disease_type == "Conjunctive":
+#             q = Q('multi_match', query = str_text_query, type='cross_fields', fields=['name', 'symptoms'], operator='and')
+#         else :
+#             q = Q("match", name = str_text_query) | Q('match', symptoms = str_text_query)
+#
+#     # print "phrases:" + str(phrase_text_query)
+#     for phrase in phrase_text_query:
+#         # print "phrase=" + phrase
+#         if q is None:
+#             q = Q("match_phrase", name = phrase) | Q("match_phrase", symptoms = phrase)
+#         else:
+#             q |= Q("match_phrase", name = phrase) | Q("match_phrase", symptoms = phrase)
+#
+#     start = 0
+#     end = 10
+#     s = s.query(q)
+#
+#     # execute search
+#     response = s[start:end].execute()
+#     if response.hits.total == 0:
+#         # print "response is 0"
+#         return False
+#     else: return True
 
 
 if __name__ == "__main__":

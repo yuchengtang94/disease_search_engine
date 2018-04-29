@@ -90,6 +90,16 @@ body {
             <hr>
             {% endif %}
 
+            {% if diseaseType %}
+            <div class = "rdr-box" id = "diseaseType">
+                <strong>Disease Type</strong>
+                <h1></h1>
+                <a name = "diseaseType"></a>
+                <pre style="white-space: pre-wrap; font-family:system-ui; font-size: 16px; ">{{diseaseType | safe}}</pre>
+            </div>
+            <hr>
+            {% endif %}
+
             {% if intro %}
             <div class="rdr-box" id="introduction">
                 <strong>Introduction</strong>
@@ -181,6 +191,9 @@ body {
                 {% if name %}
                 <a class="nav-link" id="v-pills-name-tab" data-toggle="pill" href="#name" role="tab" aria-controls="v-pills-home" aria-selected="true">Name</a>
                 {% endif %}
+                {% if diseaseType %}
+                <a class="nav-link" id="v-pills-diseaseType-tab" data-toggle="pill" href="#diseaseType" role="tab" aria-controls="v-pills-home" aria-selected="true">Disease Type</a>
+                {% endif %}
                 {% if intro %}
                 <a class="nav-link" id="v-pills-intro-tab" data-toggle="pill" href="#introduction" role="tab" aria-controls="v-pills-profile" aria-selected="false">Introduction</a>
                 {% endif %}
@@ -209,6 +222,9 @@ body {
             <div class="tab-content" id="v-pills-tabContent">
                 {% if name %}
                 <div class="tab-pane fade show active" id="v-pills-name" role="tabpanel" aria-labelledby="v-pills-name-tab"></div>
+                {% endif %}
+                {% if diseaseType %}
+                <div class="tab-pane fade show active" id="v-pills-diseaseType" role="tabpanel" aria-labelledby="v-pills-diseaseType-tab"></div>
                 {% endif %}
 
                 {% if intro %}

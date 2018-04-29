@@ -228,7 +228,7 @@ h5 {
         {% if res_num %}
             {% for res in results %}
             <ul>
-                <pre class="sansserif"><a href="/documents/{{res}}" target="_blank">  {{ results[res]['name']|safe }} </a></pre>
+                <pre><a class="sansserif" href="/documents/{{res}}" target="_blank">  {{ results[res]['name']|safe }}</a>  {{ results[res]['disease_type']|safe }}</pre>
 
                 {% if results[res]['symptoms'] %}
                 <p class="results">{{results[res]['symptoms'] | safe}}</p>
