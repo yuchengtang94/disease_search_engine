@@ -18,7 +18,7 @@ tmp_name = ""
 tmp_affected_populations = ""
 tmp_causes = ""
 tmp_treatment = ""
-search_options = "Conjunctive"
+disease_type = "Conjunctive"
 
 inform = ""
 
@@ -38,12 +38,13 @@ def results(page):
     global tmp_name
 
     global gresults
-    global search_options
+    global tmp_disease_type
 
     global tmp_affected_populations
 
     global tmp_causes
     global tmp_other_information
+
 
     global inform
 
@@ -61,13 +62,15 @@ def results(page):
 
         other_information_query = request.form['other_information']
 
+        disease_type = request.form['disease_type']
 
 
-        search_options = request.form['options']
         # print text_select
 
         # update global variable template date
         tmp_symptoms = symptoms_query
+
+        tmp_disease_type = disease_type
 
         tmp_affected_populations = affected_populations_query
         # tmp_country = country_query
@@ -120,14 +123,14 @@ def results(page):
             phrase_text_query.append(symptoms_query[beg: i])
             beg = i + 1
 
-        if text_search(str_text_query, phrase_text_query, q) is False and search_options == "Conjunctive":
-            search_options = "Disjunctive"
+        if text_search(str_text_query, phrase_text_query, q) is False and disease_type == "Conjunctive":
+            disease_type = "Disjunctive"
             inform = " The text query has no match result, showing the result of disjunctive search"
             print inform
 
         if len(str_text_query) > 0:
             print "str_text_query=" + str_text_query
-            if search_options == "Conjunctive":
+            if disease_type == "Conjunctive":
                 q = Q('multi_match', query = str_text_query, type='cross_fields', fields=['symptoms', 'name'], operator='and')
             else :
                 q = Q("match", symptoms = str_text_query) | Q('match', name = str_text_query)
@@ -334,7 +337,7 @@ def text_search(str_text_query,phrase_text_query,q):
     s = mDisease.search()
     if len(str_text_query) > 0:
         # print "str_text_query=" + str_text_query
-        if search_options == "Conjunctive":
+        if disease_type == "Conjunctive":
             q = Q('multi_match', query = str_text_query, type='cross_fields', fields=['name', 'symptoms'], operator='and')
         else :
             q = Q("match", name = str_text_query) | Q('match', symptoms = str_text_query)
