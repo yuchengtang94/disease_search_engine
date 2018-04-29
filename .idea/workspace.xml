@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="10551cdd-73a6-48ec-ae96-68d421edd4b9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/final_rare_disease.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templates/head.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/templates/page_SERP.html" afterPath="$PROJECT_DIR$/templates/page_SERP.html" />
+      <change beforePath="$PROJECT_DIR$/test_rare_disease.json" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +18,14 @@
     <SUITE FILE_PATH="coverage/ES$ES.coverage" NAME="ES Coverage Results" MODIFIED="1524589438769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/disease_search_engine$index.coverage" NAME="index Coverage Results" MODIFIED="1524953077176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ES$index.coverage" NAME="index Coverage Results" MODIFIED="1524588483564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/disease_search_engine$ES.coverage" NAME="ES Coverage Results" MODIFIED="1524974845281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/disease_search_engine$ES.coverage" NAME="ES Coverage Results" MODIFIED="1524975443336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
+            <state relative-caret-position="1045">
               <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -36,18 +37,18 @@
       <file leaf-file-name="page_targetArticle.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/page_targetArticle.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="1178">
               <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="72" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_SERP.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="page_SERP.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
+            <state relative-caret-position="130">
+              <caret line="232" column="16" lean-forward="false" selection-start-line="232" selection-start-column="16" selection-end-line="232" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -56,18 +57,8 @@
       <file leaf-file-name="page_query.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/page_query.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/query.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2120">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="133">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -166,6 +157,11 @@
             <path>
               <item name="disease_search_engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="disease_search_engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="disease_search_engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disease_search_engine" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,17 +290,17 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30793992" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30793992" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14529915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14713065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -470,13 +466,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_rare_disease.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="114">
-          <caret line="5" column="1238" lean-forward="false" selection-start-line="5" selection-start-column="1238" selection-end-line="5" selection-end-column="1238" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/final_rare_disease.json" />
     <entry file="file://$PROJECT_DIR$/templates/page_query.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2356">
@@ -519,13 +509,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_rare_disease.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="114">
-          <caret line="5" column="1238" lean-forward="false" selection-start-line="5" selection-start-column="1238" selection-end-line="5" selection-end-column="1238" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/final_rare_disease.json" />
     <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -568,13 +552,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_rare_disease.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="114">
-          <caret line="5" column="1238" lean-forward="false" selection-start-line="5" selection-start-column="1238" selection-end-line="5" selection-end-column="1238" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/final_rare_disease.json" />
     <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1957">
@@ -617,13 +595,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_rare_disease.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="108">
-          <caret line="5" column="1238" lean-forward="true" selection-start-line="5" selection-start-column="1238" selection-end-line="5" selection-end-column="1238" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/final_rare_disease.json" />
     <entry file="file://$PROJECT_DIR$/templates/page_targetArticle.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -658,13 +630,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_rare_disease.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="108">
-          <caret line="5" column="1625" lean-forward="false" selection-start-line="5" selection-start-column="1625" selection-end-line="5" selection-end-column="1625" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/final_rare_disease.json" />
     <entry file="file://$PROJECT_DIR$/templates/page_targetArticle.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -680,13 +646,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_rare_disease.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="114">
-          <caret line="5" column="1238" lean-forward="false" selection-start-line="5" selection-start-column="1238" selection-end-line="5" selection-end-column="1238" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/final_rare_disease.json" />
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -701,33 +661,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page_query.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/page_targetArticle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="1178">
           <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="72" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
+        <state relative-caret-position="1045">
           <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -739,6 +683,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2120">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page_query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page_SERP.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="232" column="16" lean-forward="false" selection-start-line="232" selection-start-column="16" selection-end-line="232" selection-end-column="16" />
           <folding />
         </state>
       </provider>

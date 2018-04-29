@@ -229,7 +229,11 @@ h5 {
             {% for res in results %}
             <ul>
                 <pre class="sansserif"><a href="/documents/{{res}}" target="_blank">  {{ results[res]['name']|safe }} </a></pre>
+
+                {% if results[res]['symptoms'] %}
                 <p class="results">{{results[res]['symptoms'] | safe}}</p>
+                {% endif %}
+
             </ul>
             {% endfor %}
         {% else %}
