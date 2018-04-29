@@ -6,12 +6,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    $(".nav a").on("click", function(){
-        $(".nav").find(".active").removeClass("active");
-        $(this).parent().addClass("active");
-    });
-    </script>
+
 </head>
 
 
@@ -62,7 +57,22 @@ body {
 
 </style>
 
+<div class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/results">Results</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Details</a>
+  </li>
+</div>
+
+
 <div class="container">
+
+
     <h2 class="text-center">{{name|safe}}</h2>
     <div class="left_body">
        <!--<div class="disease" style="word-wrap:break-word; padding:10px;">
@@ -70,6 +80,7 @@ body {
                 <pre style="white-space: pre-wrap;"><strong>{{term}}</strong>: {{disease[term] | safe}}</pre>
             {% endfor %}
         </div>-->
+            {% if name %}
             <div class="rdr-box" id="name">
                 <strong>Name</strong>
                 <h1></h1>
@@ -77,6 +88,9 @@ body {
                 <pre style="white-space: pre-wrap; font-family:system-ui; font-size: 16px; ">{{name | safe}}</pre>
             </div>
             <hr>
+            {% endif %}
+
+            {% if intro %}
             <div class="rdr-box" id="introduction">
                 <strong>Introduction</strong>
                 <h1></h1>
@@ -84,6 +98,9 @@ body {
                 <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{intro | safe}}</pre>
             </div>
             <hr>
+            {% endif %}
+
+            {% if symp %}
             <div class="rdr-box" id="symptoms">
                 <strong>Symptoms</strong>
                 <h1></h1>
@@ -91,13 +108,21 @@ body {
                 <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{symp | safe}}</pre>
             </div>
             <hr>
+            {% endif %}
+
+            {% if causes %}
+
             <div class="rdr-box" id="causes">
                 <strong>Causes</strong>
                 <h1></h1>
                 <a name="causes"></a>
                 <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{causes | safe}}</pre>
             </div>
+
             <hr>
+            {% endif %}
+
+            {% if treat %}
             <div class="rdr-box" id="treatment">
                 <strong>Treatment</strong>
                 <h1></h1>
@@ -105,6 +130,32 @@ body {
                 <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{treat | safe}}</pre>
             </div>
             <hr>
+
+            {% endif %}
+
+            {% if popu %}
+            <div class="rdr-box" id="affected_populations">
+                <strong>Affected_Populations</strong>
+                <h1></h1>
+                <a name="affected_populations"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{popu | safe}}</pre>
+            </div>
+            <hr>
+            {% endif %}
+
+            {% if diag %}
+
+            <div class="rdr-box" id="diagnosis">
+                <strong>Diagnosis</strong>
+                <h1></h1>
+                <a name="diagnosis"></a>
+                <pre style="white-space: pre-wrap;  font-family:system-ui; font-size: 16px; ">{{diag | safe}}</pre>
+            </div>
+            <hr>
+            {% endif %}
+
+            {% if similarDiseaseDict %}
+
             <div class="rdr-box" id = "similarDiseases">
                 <strong>Similar Diseases</strong>
                 <h1></h1>
@@ -118,6 +169,7 @@ body {
                     {% endfor %}
                 {% endif %}
             </div>
+            {% endif %}
     </div>
 
 
@@ -125,48 +177,77 @@ body {
         <div class="right_body">
             <div class="sidebar" role="navigation">
             <div class="rdr-sidebar-index" role="navigation">
-                <!--<ul class="nav flex-sm-column">-->
-                      <!--<li class="nav-item">-->
-                        <!--<a class="nav-link active" href="#name" data-toggle="pill">Name</a>-->
-
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="#introduction" data-toggle="pill">Introduction</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="#symptoms" data-toggle="pill">Symptoms</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link " href="#causes" data-toggle="pill">Causes</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link " href="#treatment" data-toggle="pill">Treatment</a>-->
-                    <!--</li>-->
-                <!--</ul>-->
-             <!--</div>-->
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-
-                <!--<a class="nav-link active" id="v-pills-name-tab" data-toggle="pill" href="#name" role="tab" aria-controls="v-pills-name" aria-selected="true">Name</a>-->
-                <!--<a class="nav-link" id="v-pills-intro-tab" data-toggle="pill" href="#introduction" role="tab" aria-controls="v-pills-intro" aria-selected="false">Introduction</a>-->
-                <!--<a class="nav-link" id="v-pills-sym-tab" data-toggle="pill" href="#symptoms" role="tab" aria-controls="v-pills-sym" aria-selected="false">Symptoms</a>-->
-                <!--<a class="nav-link" id="v-pills-causes-tab" data-toggle="pill" href="#causes" role="tab" aria-controls="v-pills-causes" aria-selected="false">Causes</a>-->
-                <!--<a class="nav-link" id="v-pills-treatment-tab" data-toggle="pill" href="#treatment" role="tab" aria-controls="v-pills-treatment" aria-selected="false">Treatment</a>-->
-
+                {% if name %}
                 <a class="nav-link" id="v-pills-name-tab" data-toggle="pill" href="#name" role="tab" aria-controls="v-pills-home" aria-selected="true">Name</a>
+                {% endif %}
+                {% if intro %}
                 <a class="nav-link" id="v-pills-intro-tab" data-toggle="pill" href="#introduction" role="tab" aria-controls="v-pills-profile" aria-selected="false">Introduction</a>
+                {% endif %}
+                {% if symp %}
                 <a class="nav-link" id="v-pills-sym-tab" data-toggle="pill" href="#symptoms" role="tab" aria-controls="v-pills-messages" aria-selected="false">Symptoms</a>
+                {% endif %}
+                {% if causes %}
                 <a class="nav-link" id="v-pills-causes-tab" data-toggle="pill" href="#causes" role="tab" aria-controls="v-pills-messages" aria-selected="false">Causes</a>
+                {% endif %}
+                {% if treat %}
+
                 <a class="nav-link" id="v-pills-treatment-tab" data-toggle="pill" href="#treatment" role="tab" aria-controls="v-pills-settings" aria-selected="false">Treatment</a>
+                {% endif %}
+                {% if popu %}
+
+                <a class="nav-link" id="v-pills-affected_populations-tab" data-toggle="pill" href="#affected_populations" role="tab" aria-controls="v-pills-settings" aria-selected="false">Populations</a>
+                {% endif %}
+                {% if diag %}
+
+                <a class="nav-link" id="v-pills-diagnosis-tab" data-toggle="pill" href="#diagnosis" role="tab" aria-controls="v-pills-settings" aria-selected="false">Diagnosis</a>
+                {% endif %}
+                {% if similarDiseaseDict %}
+                <a class="nav-link" id="v-pills-similarDiseases-tab" data-toggle="pill" href="#similarDiseases" role="tab" aria-controls="v-pills-settings" aria-selected="false">Similar</a>
+                {% endif %}
             </div>
             <div class="tab-content" id="v-pills-tabContent">
+                {% if name %}
                 <div class="tab-pane fade show active" id="v-pills-name" role="tabpanel" aria-labelledby="v-pills-name-tab"></div>
-                <div class="tab-pane fade" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab"></div>
-                <div class="tab-pane fade" id="v-pills-sym" role="tabpanel" aria-labelledby="v-pills-sym-tab"></div>
-                <div class="tab-pane fade" id="v-pills-causes" role="tabpanel" aria-labelledby="v-pills-causes-tab"></div>
-                <div class="tab-pane fade" id="v-pills-treatment" role="tabpanel" aria-labelledby="v-pills-treatment-tab"></div>
-            </div>
+                {% endif %}
 
+                {% if intro %}
+                <div class="tab-pane fade" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab"></div>
+                {% endif %}
+
+                {% if symp %}
+                <div class="tab-pane fade" id="v-pills-sym" role="tabpanel" aria-labelledby="v-pills-sym-tab"></div>
+                {% endif %}
+
+                {% if causes %}
+                <div class="tab-pane fade" id="v-pills-causes" role="tabpanel" aria-labelledby="v-pills-causes-tab"></div>
+                {% endif %}
+
+                {% if treat %}
+                <div class="tab-pane fade" id="v-pills-treatment" role="tabpanel" aria-labelledby="v-pills-treatment-tab"></div>
+                {% endif %}
+
+                {% if popu %}
+                <div class="tab-pane fade" id="v-pills-affected_populations" role="tabpanel" aria-labelledby="v-pills-affected_populations-tab"></div>
+                {% endif %}
+
+                {% if diag %}
+                <div class="tab-pane fade" id="v-pills-diagnosis" role="tabpanel" aria-labelledby="v-pills-diagnosis-tab"></div>
+                {% endif %}
+
+                {% if similarDiseaseDict %}
+                <div class="tab-pane fade" id="v-pills-similarDiseases" role="tabpanel" aria-labelledby="v-pills-similarDiseases-tab"></div>
+                {% endif %}
+            </div>
             </div>
         </div>
     </div>
 </div>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
