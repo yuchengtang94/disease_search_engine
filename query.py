@@ -18,7 +18,7 @@ tmp_name = ""
 tmp_affected_populations = ""
 tmp_causes = ""
 tmp_treatment = ""
-disease_type = "Conjunctive"
+disease_type = "All Disease"
 
 inform = ""
 
@@ -78,6 +78,9 @@ def results(page):
         tmp_other_information = other_information_query
 
     else:
+
+        disease_type = tmp_disease_type
+
         symptoms_query = tmp_symptoms
 
         affected_populations_query = tmp_affected_populations
@@ -88,6 +91,9 @@ def results(page):
 
     # store query values to display in search box while browsing
     shows = {}
+
+    shows['disease_type'] = disease_type
+
     shows['symptoms'] = symptoms_query
 
     shows['affected_populations'] = affected_populations_query

@@ -131,14 +131,28 @@ h5 {
     <form class="form-horizontal" action="/results" name="search" method="post">
         <div class="left_body">
             <div class="form-group">
-                <label for="selection" class="col-sm-2 control-label">Options</label>
+                <label for="selection" class="col-sm-2 control-label">Type</label>
                 <div class="col-sm-10">
-                  <select class="form-control" id="selection" name="options">
-                      <option>All Disease</option>
+                  <select class="form-control" id="selection" name="disease_type">
 
-                      <option>Common Disease</option>
+                      {% if queries['disease_type'] == "All Disease" %}
+                            <option selected = "selected" value="All Disease">All Disease</option>
+                      {% else %}
+                            <option value="All Disease">All Disease</option>
+                      {% endif %}
 
-                      <option>Rare Disease</option>
+                      {% if queries['disease_type'] == "Common Disease" %}
+                            <option selected = "selected" value="Common Disease">Common Disease</option>
+                      {% else %}
+                            <option value="Common Disease">Common Disease</option>
+                      {% endif %}
+
+                      {% if queries['disease_type'] == "Rare Disease" %}
+                            <option selected = "selected" value="Rare Disease">Rare Disease</option>
+                      {% else %}
+                            <option value="Rare Disease">Rare Disease</option>
+                      {% endif %}
+
                   </select>
                 </div>
             </div>
@@ -146,28 +160,28 @@ h5 {
             <div class="form-group">
                 <label for="symptom_name" class="col-sm-2 control-label">Symptoms:</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="symptom_name" placeholder="Symptoms or Disease Name" name="query">
+                  <input type="text" class="form-control" id="symptom_name" placeholder="Symptoms or Disease Name" name="query" value={{queries['symptoms']}}>
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="causes" class="col-sm-2 control-label">Causes:</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="causes" placeholder="Causes" name="causes">
+                  <input type="text" class="form-control" id="causes" placeholder="Causes" name="causes" value={{queries['causes']}}>
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="affected_populations" class="col-sm-2 control-label">Population:</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="affected_populations" placeholder="Affected Populations" name="affected_populations">
+                  <input type="text" class="form-control" id="affected_populations" placeholder="Affected Populations" name="affected_populations" value={{queries['affected_populations']}}>
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="other_information" class="col-sm-2 control-label">Other:</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="other_information" placeholder="other_information" name="other_information">
+                  <input type="text" class="form-control" id="other_information" placeholder="other_information" name="other_information" value={{queries['other_information']}}>
                 </div>
             </div>
 
