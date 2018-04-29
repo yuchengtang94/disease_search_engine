@@ -150,9 +150,9 @@ def results(page):
         s = s.query(q)
 
     if disease_type == "Common Disease":
-        s = s.query("match", disease_type="Common Disease")
+        s = s.query("match", disease_type="Common")
     elif disease_type == "Rare Disease":
-        s = s.query("match", disease_type="Rare Disease")
+        s = s.query("match", disease_type="Rare")
 
     if len(affected_populations_query) > 0:
         s = s.query('match', affected_populations=affected_populations_query)
@@ -244,6 +244,7 @@ def results(page):
     result_num = response.hits.total
 
     print "other info:" + shows['other_information']
+    print "query:" + shows['symptoms']
 
     # if we find the results, extract title and text information from doc_data, else do nothing
     if result_num > 0:
