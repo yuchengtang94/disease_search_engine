@@ -10,7 +10,7 @@ from elasticsearch_dsl.connections import connections
 from elasticsearch_dsl.analysis import tokenizer, analyzer
 from elasticsearch_dsl.query import MultiMatch, Match
 
-
+# Author: Yancheng Chen
 # Connect to local host server
 connections.create_connection(hosts=['127.0.0.1:9200'])
 
@@ -53,7 +53,7 @@ def buildIndex():
     Disease_index = Index('test_rare_disease_index')
     if Disease_index.exists():
         Disease_index.delete()  # Overwrite any previous version
-    Disease_index.doc_type(Disease) # Set doc_type to Movie
+    Disease_index.doc_type(Disease) # Set doc_type to Disease
     Disease_index.create()
     
     # Open the json film corpus

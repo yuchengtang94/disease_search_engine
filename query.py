@@ -31,6 +31,7 @@ similar_dis_num = 0
 def search():
     return render_template('page_query.html')
 
+# Author: Yancheng Chen & Yucheng Tang
 @app.route("/results", defaults={'page': 1}, methods=['GET','POST'])
 @app.route("/results/<page>", methods=['GET','POST'])
 def results(page):
@@ -257,7 +258,7 @@ def results(page):
         return render_template('page_SERP.html', results=message, res_num=result_num, page_num=page, queries=shows,
                                message = inform)
 
-
+# Author: Yancheng Chen
 @app.route("/documents/<res>", methods=['GET'])
 def documents(res):
     global gresults
@@ -286,7 +287,7 @@ def documents(res):
                            symp=diseaseSymp, similar_dis_num=similar_dis_num, causes=diseaseCauses, treat=diseaseTreat,
                            popu=diseasePopu, diag=diseaseDiag,similarDiseaseDict=similarDisease, diseaseType = diseaseType)
 
-
+# Author: Yancheng Chen
 def get_similar_docs(diseaseId):
     global similar_dis_num
     global g_similar_results
@@ -322,6 +323,7 @@ def get_similar_docs(diseaseId):
     similar_dis_num = len(resultList)
     return resultList
 
+# Author: Yancheng Chen
 # click similar disease to get document
 @app.route("/similar_documents/<res>", methods=['GET'])
 def similar_documents(res):
