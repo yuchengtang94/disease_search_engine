@@ -172,6 +172,7 @@ def results(page):
     s = s.highlight('treatment', fragment_size=999999999, number_of_fragments=1)
     s = s.highlight('diagnosis', fragment_size=999999999, number_of_fragments=1)
     s = s.highlight('disease_type', fragment_size=999999999, number_of_fragments=1)
+    s = s.highlight('introduction', fragment_size=999999999, number_of_fragments=1)
 
     # extract data for current page
     start = 0 + (page-1)*10
