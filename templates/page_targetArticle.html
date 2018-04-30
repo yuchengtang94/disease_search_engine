@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> <!--Author: Caiwei Wu-->
 <head>
     <title>Target Article</title>
     <!-- Latest compiled and minified CSS -->
@@ -9,7 +9,7 @@
 
 </head>
 
-
+<!--Author: Caiwei Wu-->
 <style>
 body {
     background-color: #ffe4c4;
@@ -57,9 +57,10 @@ body {
 
 </style>
 
+<!--Author: Caiwei Wu-->
 
 <div class="container">
-
+    <!--navigation bar-->
     <div class="nav">
       <li class="nav-item">
         <a class="nav-link active" href="/">Home</a>
@@ -72,19 +73,17 @@ body {
       </li>
     </div>
 
-
+    <!--centered the name of the disease-->
     <h2 class="text-center">{{name|safe}}</h2>
+    <!--divided the page into left right parts-->
     <div class="left_body">
-       <!--<div class="disease" style="word-wrap:break-word; padding:10px;">
-            {% for term in disease %}
-                <pre style="white-space: pre-wrap;"><strong>{{term}}</strong>: {{disease[term] | safe}}</pre>
-            {% endfor %}
-        </div>-->
             {% if name %}
+            <!--bold the title of each field -->
             <div class="rdr-box" id="name">
                 <strong>Name</strong>
                 <h1></h1>
                 <a name="name"></a>
+                <!--special characters in pre tag will be translated into symbol entity:eg "&lt;" -> "<"£¬"&gt;" -> ">" -->
                 <pre style="white-space: pre-wrap; font-family:system-ui; font-size: 16px; ">{{name | safe}}</pre>
             </div>
             <hr>
@@ -183,8 +182,9 @@ body {
     </div>
 
 
-
+        <!--Author: Caiwei Wu-->
         <div class="right_body">
+            <!--vertical navigation bar on the right-->
             <div class="sidebar" role="navigation">
             <div class="rdr-sidebar-index" role="navigation">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
