@@ -1,4 +1,3 @@
-
 import re
 from flask import *
 from index import Disease
@@ -298,7 +297,8 @@ def get_similar_docs(diseaseId):
                 like={
                     "_index": "test_rare_disease_index",
                     "_type": "disease",
-                    "_id": diseaseId}
+                    "_id": diseaseId},
+                max_doc_freq=10
                 )
     response = s[0:5].execute()
 
