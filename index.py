@@ -22,31 +22,7 @@ my_analyzer = analyzer('custom',
                        tokenizer='standard',
                        filter=['lowercase', 'stop','html_strip'])
 # --- Add more analyzers here ---
-title_analyzer = analyzer('custom',
-                          tokenizer = ['standard','whitespace', 'lowercase'],
-                          filter = '')
-text_analyzer_norm = analyzer('custom',
-                         tokenizer = ['standard', 'lowercase'],
-                         filter = ['html_strip', 'stop','word_delimiter','porter_stem'])
-starr_analyzer = analyzer('custom',
-                          tokenizer = ['lowercase', 'whitespace'],
-                          filter = ['html_strip'])
-director_analyzer = analyzer('custom',
-                          tokenizer = ['lowercase', 'whitespace'],
-                          filter = 'html_strip')
-location_analyzer = analyzer('custom',
-                             tokenizer = ['lowercase', 'whitespace'],
-                             filter = 'html_strip')
-language_analyzer = analyzer('custom',
-                             tokenizer = ['lowercase', 'whitespace'],
-                             filter = 'html_strip')
-category_analyzer = analyzer('custom',
-                             tokenizer = ['standard','lowercase', 'whitespace'],
-                             filter = ['html_strip', 'stop','word_delimiter'])
-w_analyzer = analyzer('custom',
-                      tokenizer = 'whitespace',
-                      filter = ['lowercase', 'stop', 'stemmer'],
-                      char_filter = ['html_strip'])
+
 
 # Define document mapping
 # You can use existed analyzers or use ones you define yourself as above
@@ -63,6 +39,7 @@ class Disease(DocType):
         symptoms = Text(analyzer=my_analyzer)
         causes = Text(analyzer=my_analyzer)
         treatment = Text(analyzer=my_analyzer)
+        # disease_type = Text(None)
 
     class Meta:
         index = 'test_rare_disease_index'
@@ -80,7 +57,7 @@ def buildIndex():
     Disease_index.create()
     
     # Open the json film corpus
-    with open('final_rare_disease.json') as data_file:
+    with open('disease_data.json') as data_file:
         diseases = json.load(data_file)
         size = len(diseases)
     
@@ -90,11 +67,14 @@ def buildIndex():
             "_index": "test_rare_disease_index",
             "_type": "disease",
             "_id": mid,
+            "disease_type":diseases[str(mid)]['disease_type'],
             "name":diseases[str(mid)]['name'],
             "introduction":diseases[str(mid)]['introduction'],
             "symptoms":diseases[str(mid)]['symptoms'],
             "causes":diseases[str(mid)]['causes'],
-            "treatment":diseases[str(mid)]['treatment']
+            "treatment":diseases[str(mid)]['treatment'],
+            "diagnosis":diseases[str(mid)]['diagnosis'],
+            "affected_populations":diseases[str(mid)]['affected_populations'],
 
              #diseases[str(mid)]['runtime'] # You would like to convert runtime to integer (in minutes)
             # --- Add more fields here ---
@@ -105,69 +85,6 @@ def buildIndex():
     
     helpers.bulk(es, actions) 
 
-def convert_time(s):
-    res = 0
-    if isinstance(s, types.ListType):
-        s = s[0]
-
-    s = s.lower()
-    s = re.sub(r"\s*", "",s)
-    if s == "":
-        return res
-    if re.match(r"\d*h\d*m.*|"
-                r"\d*hours*\d*minutes*.*|"
-                r"\d*h\d*mins*.*"
-                , s):
-
-        i = 0
-        while i < len(s) and (s[i].isdigit() or s[i] == '.'):
-            i += 1
-        hour = s[:i]
-
-        while i < len(s) and not s[i].isdigit():
-            i +=1
-        j = i
-        while j < len(s) and (s[j].isdigit() or s[j] == '.'):
-            j +=1
-        minute = s[i:j] or "0"
-        try:
-
-            res = int(60 * float(hour)) + int(float(minute))
-        except:
-            print "hour:" + hour + " min:" + minute
-            # print "convertTime: convert int/float failed"
-    elif re.match(r"\d*\.*\d*mins*.*|"
-                  r"\d*minutes*.*"
-            , s):
-
-        j = 0
-        while j < len(s) and (s[j].isdigit() or s[j] == '.'):
-            j +=1
-        minute = s[:j]
-        try:
-            res = int(float(minute))
-        except:
-            print "min:" + minute
-            # print "convertTime: convert float failed"
-
-    elif re.match(r"\d*\.*\d*h.*|"
-                  r"\d*\.*\d*hours*.*"
-            ,s):
-
-        i = 0
-        while i < len(s) and (s[i].isdigit() or s[i] == '.'):
-            i += 1
-        hour = s[:i]
-        try:
-
-            res = int(60 * float(hour))
-        except:
-            print "hour:" + hour
-            # print "convertTime: convert int/float failed"
-    else:
-
-        print "convert runtime failed: " + "\"" + str(s) + "\""
-    return res
 
 def main():
     start_time = time.time()
